@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 WEBSITE_URL: str = "https://www.itaka.pl/all-inclusive/"
-NO_OF_SCRAPED_OFFERS: int = 50
+NO_OF_SCRAPED_OFFERS: int = 500
 
 
 class ItakaScraper:
