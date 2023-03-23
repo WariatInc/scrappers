@@ -1,7 +1,7 @@
 name: Python Linter
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
