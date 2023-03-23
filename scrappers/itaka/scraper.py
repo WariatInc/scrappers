@@ -200,4 +200,3 @@ class ItakaScraper:
 
 
 scraper = ItakaScraper(WEBSITE_URL, NO_OF_SCRAPED_OFFERS)
-
