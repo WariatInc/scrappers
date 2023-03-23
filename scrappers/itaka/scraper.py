@@ -32,18 +32,25 @@ class ItakaScraper:
     def _accept_cookies(self, driver: webdriver.Chrome) -> None:
         time.sleep(5)
         accept_agreement_element = WebDriverWait(driver, 5).until(
-            EC.presence_of_element_located((By.XPATH, "/html/body/div[5]/div[2]/div[2]/div/div[3]/button[2]")))
+            EC.presence_of_element_located(
+                (By.XPATH, "/html/body/div[5]/div[2]/div[2]/div/div[3]/button[2]")
+            )
+        )
         accept_agreement_element.click()
         time.sleep(5)
-        accept_cookies_element = driver.find_element(By.XPATH, '//*[@id="cookie-info-container"]/div/p/button')
+        accept_cookies_element = driver.find_element(
+            By.XPATH, '//*[@id="cookie-info-container"]/div/p/button'
+        )
         accept_cookies_element.click()
         time.sleep(5)
 
     def _website_scroll(self, driver: webdriver.Chrome) -> None:
         generate_more_content_iterations = self.no_of_scraped_offers // 25
         for _ in range(generate_more_content_iterations - 1):
-            generate_more_offers_button = driver.find_element(By.XPATH,
-                                                              '//*[@id="search-results-container"]/div/div/section/div/div[1]/div[2]/div[1]')
+            generate_more_offers_button = driver.find_element(
+                By.XPATH,
+                '//*[@id="search-results-container"]/div/div/section/div/div[1]/div[2]/div[1]',
+            )
             actions = ActionChains(driver)
             actions.move_to_element(generate_more_offers_button).perform()
             time.sleep(3)
@@ -52,9 +59,11 @@ class ItakaScraper:
 
     def _generate_url_list(self, driver: webdriver.Chrome) -> List[str]:
         html_page_source = driver.page_source
-        html_content = BeautifulSoup(html_page_source, 'html.parser')
-        offer_titles = html_content.find_all('h3', {'class': 'header_title'})
-        offer_urls = [f"https://www.itaka.pl{title.find('a')['href']}" for title in offer_titles]
+        html_content = BeautifulSoup(html_page_source, "html.parser")
+        offer_titles = html_content.find_all("h3", {"class": "header_title"})
+        offer_urls = [
+            f"https://www.itaka.pl{title.find('a')['href']}" for title in offer_titles
+        ]
 
         return offer_urls
 
@@ -72,47 +81,70 @@ class ItakaScraper:
         return offer_urls
 
     def _get_hotel_name(self, html_content: BeautifulSoup) -> str:
-        return html_content.find('span', {'class': 'productName-holder'}).text.strip()
+        return html_content.find("span", {"class": "productName-holder"}).text.strip()
 
     def _get_country_name(self, html_content: BeautifulSoup) -> str:
-        return html_content.find('span', {'class': 'destination-title'}).text.strip().split('/', 1)[0][:-1]
+        return (
+            html_content.find("span", {"class": "destination-title"})
+            .text.strip()
+            .split("/", 1)[0][:-1]
+        )
 
     def _get_city_name(self, html_content: BeautifulSoup) -> str:
-        return html_content.find('span', {'class': 'destination-country-region'}).text.strip().split('/', 1)[-1][1:]
+        return (
+            html_content.find("span", {"class": "destination-country-region"})
+            .text.strip()
+            .split("/", 1)[-1][1:]
+        )
 
     def _get_description(self, html_content: BeautifulSoup) -> str:
-        return html_content.find('div', {'id': 'product-tab-productdescription'}).text.strip().split("POŁOŻENIE:")[
-            0].strip()
+        return (
+            html_content.find("div", {"id": "product-tab-productdescription"})
+            .text.strip()
+            .split("POŁOŻENIE:")[0]
+            .strip()
+        )
 
     def _get_score(self, html_content: BeautifulSoup) -> int:
         try:
-            rating = float(html_content.find('div', {'class': 'event-opinion-flag'}).text.strip().split('/', 1)[0])
+            rating = float(
+                html_content.find("div", {"class": "event-opinion-flag"})
+                .text.strip()
+                .split("/", 1)[0]
+            )
             final_rating = round(rating * (rating / 6))
         except AttributeError:
-            print('Error: AttributeError - generate random rating')
+            print("Error: AttributeError - generate random rating")
             final_rating = random.randint(3, 5)
         return final_rating
 
     def _get_img(self, html_content: BeautifulSoup) -> str:
-        gallery_content = str(html_content.find('div', {'id': 'gallery'}))
+        gallery_content = str(html_content.find("div", {"id": "gallery"}))
 
         string_starting_point = gallery_content.find("<meta content=")
-        string_end_point = gallery_content.find("'", string_starting_point + len("<meta content='"))
+        string_end_point = gallery_content.find(
+            "'", string_starting_point + len("<meta content='")
+        )
 
         link_start_position = string_starting_point + len("<meta content='")
         link_end_position = string_end_point
         return gallery_content[link_start_position:link_end_position].split('"', 1)[0]
 
     def _room_picker(self, html_content: BeautifulSoup) -> Tuple[bool, ...]:
-        input_string = \
-            html_content.find('div', {'id': 'product-tab-productdescription'}).text.strip().split("SPORT I ROZRYWKA:")[
-                0].strip().split("POKÓJ:")[-1].strip()
+        input_string = (
+            html_content.find("div", {"id": "product-tab-productdescription"})
+            .text.strip()
+            .split("SPORT I ROZRYWKA:")[0]
+            .strip()
+            .split("POKÓJ:")[-1]
+            .strip()
+        )
 
         room_options = {
             "standardowy": False,
             "rodzinny": False,
             "apartament": False,
-            "suite": False
+            "suite": False,
         }
         room_options = {option: option in input_string for option in room_options}
         return tuple(room_options.values())
@@ -122,7 +154,7 @@ class ItakaScraper:
         scraped_data = []
         for offer_url in self.offer_urls:
             html_page_source = requests.get(offer_url)
-            html_content = BeautifulSoup(html_page_source.content, 'html.parser')
+            html_content = BeautifulSoup(html_page_source.content, "html.parser")
 
             hotel_name = self._get_hotel_name(html_content)
             country_name = self._get_country_name(html_content)
@@ -130,7 +162,9 @@ class ItakaScraper:
             description = self._get_description(html_content)
             score = self._get_score(html_content)
             link = self._get_img(html_content)
-            is_standard, is_family, is_apartament, is_studio = self._room_picker(html_content)
+            is_standard, is_family, is_apartament, is_studio = self._room_picker(
+                html_content
+            )
 
             json_entry = {
                 "operator": "Itaka",
@@ -144,8 +178,8 @@ class ItakaScraper:
                     "is_standard": is_standard,
                     "is_family": is_family,
                     "is_apartment": is_apartament,
-                    "is_studio": is_studio
-                }
+                    "is_studio": is_studio,
+                },
             }
 
             scraped_data.append(json_entry)
@@ -160,4 +194,3 @@ class ItakaScraper:
 
 
 scraper = ItakaScraper(WEBSITE_URL, NO_OF_SCRAPED_OFFERS)
-
