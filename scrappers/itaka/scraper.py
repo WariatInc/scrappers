@@ -65,8 +65,7 @@ class ItakaScraper:
         html_content = BeautifulSoup(html_page_source, "html.parser")
         offer_titles = html_content.find_all("h3", {"class": "header_title"})
         offer_urls = [
-            f"https://www.itaka.pl{title.find('a')['href']}"
-            for title in offer_titles
+            f"https://www.itaka.pl{title.find('a')['href']}" for title in offer_titles
         ]
 
         return offer_urls
@@ -85,9 +84,7 @@ class ItakaScraper:
         return offer_urls
 
     def _get_hotel_name(self, html_content: BeautifulSoup) -> str:
-        return html_content.find(
-            "span", {"class": "productName-holder"}
-        ).text.strip()
+        return html_content.find("span", {"class": "productName-holder"}).text.strip()
 
     def _get_country_name(self, html_content: BeautifulSoup) -> str:
         return (
@@ -134,9 +131,7 @@ class ItakaScraper:
 
         link_start_position = string_starting_point + len("<meta content='")
         link_end_position = string_end_point
-        return gallery_content[link_start_position:link_end_position].split(
-            '"', 1
-        )[0]
+        return gallery_content[link_start_position:link_end_position].split('"', 1)[0]
 
     def _room_picker(self, html_content: BeautifulSoup) -> Tuple[bool, ...]:
         input_string = (
@@ -154,9 +149,7 @@ class ItakaScraper:
             "apartament": False,
             "suite": False,
         }
-        room_options = {
-            option: option in input_string for option in room_options
-        }
+        room_options = {option: option in input_string for option in room_options}
         return tuple(room_options.values())
 
     def generate_data(self) -> List[dict]:
@@ -164,9 +157,7 @@ class ItakaScraper:
         scraped_data = []
         for offer_url in self.offer_urls:
             html_page_source = requests.get(offer_url)
-            html_content = BeautifulSoup(
-                html_page_source.content, "html.parser"
-            )
+            html_content = BeautifulSoup(html_page_source.content, "html.parser")
 
             hotel_name = self._get_hotel_name(html_content)
             country_name = self._get_country_name(html_content)
