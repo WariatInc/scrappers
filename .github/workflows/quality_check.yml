@@ -1,0 +1,43 @@
+name: Python Code Quality Checker
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install black pylint flake8 mypy
+
+    - name: Check code formatting with black
+      run: black --check .
+
+    - name: Check code quality with pylint
+      run: pylint --output-format=colorized .
+
+    - name: Check code quality with flake8
+      run: flake8 .
+
+    - name: Check code quality with mypy
+      run: mypy .
+
+    - name: Fail if any of the checks fail
+      run: |
+        if [ $? -ne 0 ]
+        then
+          echo "Code quality check failed. Please fix the issues."
+          exit 1
+        fi
