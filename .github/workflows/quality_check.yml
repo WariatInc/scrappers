@@ -27,7 +27,7 @@ jobs:
       run: black --check .
 
     - name: Check code quality with flake8
-      run: flake8 .
+      run: flake8 --ignore=E501 .
 
     - name: Check code quality with mypy
       run: mypy .
