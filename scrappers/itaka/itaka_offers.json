@@ -1,0 +1,752 @@
+[
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Fuerteventura Princess",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Fuerteventura / Esquinzo",
+    "description": "Rozleg\u0142y kompleks hotelowy po\u0142o\u017cony w urokliwym zak\u0105tku Fuerteventury oferuje pobyt w miejscu znanym z pi\u0119knych krajobraz\u00f3w! Dzi\u0119ki morzu o wszystkich odcieniach b\u0142\u0119kitu i z\u0142ocistej, piaszczystej pla\u017cy Esquinzo wakacje marze\u0144 gwarantowane! Pi\u0119kny ogr\u00f3d, bogata infrastruktura rekreacyjno-sportowa, rewelacyjne baseny z bezp\u0142atnymi le\u017cakami, a tak\u017ce animacje dla doros\u0142ych oraz dzieci to mocne strony hotelu. Spokojna okolica, bogata oferta all inclusive i przestronne pokoje czyni\u0105 hotel miejscem idealnym na wypoczynek w rodzinnym gronie lub romantyczne wakacje dla dwojga. Zdecydowanie wart swojej ceny. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/fueprin_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Casa Mare Resort (ex. Royal Tulip Beach Resort)",
+    "country": "Egipt",
+    "city": "Marsa Alam",
+    "description": "Idealne miejsce na wyjazd z przyjaci\u00f3\u0142mi i rodzinne wczasy \u2013 przestronne pokoje, serwis na wysokim poziomie i animacje pozwol\u0105 beztrosko cieszy\u0107 si\u0119 s\u0142o\u0144cem! Do dyspozycji Go\u015bci s\u0105 4 baseny, kilka restauracji i bar\u00f3w, w tym bar przy pla\u017cy. Dla najm\u0142odszych przygotowano miniklub oraz miniaquapark. Po\u0142o\u017cony przy pla\u017cy z raf\u0105 koralow\u0105 polecany jest r\u00f3wnie\u017c amatorom nurkowania. D\u0142ugi pomost u\u0142atwia wej\u015bcie do wody i jest wspania\u0142ym miejscem do ogl\u0105dania morskiego \u017cycia. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/rmftulr_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": false,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Marika",
+    "country": "Albania",
+    "city": "Durres",
+    "description": "Odnowiony, po\u0142o\u017cony w spokojnej okolicy oferuje nowoczesne wn\u0119trza, klimatyzowane pokoje z dost\u0119pem do internetu oraz przyjemn\u0105 atmosfer\u0119. Na miejscu jest kameralny basen z tarasem do opalania, restauracja serwuj\u0105ca dania kuchni lokalnej i mi\u0119dzynarodowej oraz bar w lobby. Zaledwie kilka krok\u00f3w jest do piaszczystej pla\u017cy, gdzie na Go\u015bci czeka wydzielony odcinek hotelowy z bezp\u0142atnym serwisem.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tiamari_0.jpg?version=220607-04",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Scaleta Beach",
+    "country": "Grecja",
+    "city": "Kreta / Scaleta",
+    "description": "Otoczony zieleni\u0105, zaprojektowany w zgodzie z natur\u0105, jest doskona\u0142ym wyborem dla wszystkich ceni\u0105cych sobie kameraln\u0105 atmosfer\u0119 i malownicz\u0105 okolic\u0119. Przeznaczony dla doros\u0142ych, po\u0142o\u017cony na wzg\u00f3rzu z zachwycaj\u0105cym widokiem na morze, w niewielkiej miejscowo\u015bci Scaleta, jednocze\u015bnie blisko s\u0142ynnego, wakacyjnego kurortu Rethymno, do kt\u00f3rego mo\u017cna dojecha\u0107 autobusem lub taks\u00f3wk\u0105. Hotel zyska\u0142 grono wiernych fan\u00f3w, \u015bwietne opinie zawdzi\u0119cza nie tylko lokalizacji, ale r\u00f3wnie\u017c doskona\u0142ej, hotelowej kuchni opartej na s\u0142ynnej diecie krete\u0144skiej, przygotowanej z lokalnych produkt\u00f3w. Na miejscu jest basen, restauracja i bar oraz taras, z kt\u00f3rego podziwia\u0107 mo\u017cna nie tylko pi\u0119kny widok na morze, ale r\u00f3wnie\u017c zachwycaj\u0105ce zachody s\u0142o\u0144ca!",
+    "score": 3,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/chqscal_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Mirador Maspalomas by Dunas",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Gran Canaria / Maspalomas",
+    "description": "Ca\u0142kowicie odnowiony, ze \u015bwietn\u0105 wakacyjn\u0105 atmosfer\u0105, jest znakomitym wyborem na wakacje z rodzin\u0105. Mn\u00f3stwo atrakcji dla dzieci: wspania\u0142e baseny, plac i pok\u00f3j zabaw, miniklub, animacje. Funkcjonalnie urz\u0105dzone pokoje dost\u0119pne w wersji standardowej lub rodzinnej. Hotel zapewnia bezp\u0142atny dow\u00f3z do pi\u0119knej pla\u017cy Maspalomas ze s\u0142ynnymi wydmami \u2013 wizyt\u00f3wk\u0105 Gran Canarii.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/lpamira_0.jpg?version=220616-06",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Azure Resort & Spa",
+    "country": "Grecja",
+    "city": "Zakynthos / Planos",
+    "description": "Ca\u0142kowicie odnowiony, znakomicie po\u0142o\u017cony w sercu kurortu Tsilivi z licznymi tawernami i wieczornymi rozrywkami na wyci\u0105gni\u0119cie r\u0119ki. Mocn\u0105 stron\u0105 resortu s\u0105 nowoczesne pokoje z bezp\u0142atnym internetem i \u015bwietna kuchnia w hotelowej restauracji. Dzieciakom spodoba si\u0119 basen w kszta\u0142cie litery \u201eL\u201d, a mi\u0142o\u015bnicy typowo pla\u017cowych wczas\u00f3w doceni\u0105 \u0142adn\u0105 pla\u017c\u0119 Tsilivi z bogat\u0105 ofert\u0105 sport\u00f3w wodnych. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/zthrane_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Design R2 Bahia Playa",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Fuerteventura / Tarajalejo",
+    "description": "Komfortowy, tylko dla doros\u0142ych, zaprojektowany w stylu zgodnym z najnowszymi, \u015bwiatowymi trendami. Wysmakowane, znakomicie wyposa\u017cone pokoje zapraszaj\u0105 do wypoczynku w wyrafinowanej estetycznie atmosferze. Centrum Spa Las Termas des Tarajalejo z widokiem na ocean pozwoli skorzysta\u0107 z wielu zabieg\u00f3w w pi\u0119knym otoczeniu. Propozycja dla ka\u017cdego, kto doceni oryginalno\u015b\u0107 i luksus w najlepszym wydaniu. Znakomity na niezapomniane wakacje we dwoje w spokojnym miejscu i cichej okolicy. Polecany tak\u017ce dla singli.\n\nVIVA! x ITAKA Hotels & Deals! Kochasz wakacyjne okazje? Mamy dla Ciebie mega deal w presti\u017cowych hotelach sieci R2 na Wyspach Kanaryjskich. Tylko z nami, tylko w wybranych terminach zap\u0142acisz mniej za pok\u00f3j 1-osobowy, masz gratis powitalny koktajl, wej\u015bcie do Spa, romantyczn\u0105 kolacj\u0119, a tak\u017ce 10% zni\u017cki na menu w restauracjach \u00e0 la carte.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/fuebahg_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Mosaique Beach Resort Taba Heights (ex. Sofitel Taba Heights)",
+    "country": "Egipt",
+    "city": "Taba",
+    "description": "Fantastycznie po\u0142o\u017cony, bezpo\u015brednio przy przepi\u0119knej pla\u017cy w Zatoce Akaba, z malowniczym widokiem na g\u00f3ry Synaj. Hotel zachwyca stylowymi wn\u0119trzami, imponuj\u0105c\u0105 architektur\u0105, przepi\u0119knymi ogrodami i doskona\u0142\u0105 obs\u0142ug\u0105. Znakomity wyb\u00f3r nawet dla najbardziej wymagaj\u0105cych Klient\u00f3w. To niezwyk\u0142e miejsce spodoba si\u0119 osobom ceni\u0105cym styl i unikalny charakter, inspirowany tradycyjn\u0105 orientaln\u0105 architektur\u0105. Profesjonalnie wyposa\u017cone centrum kongresowe to gwarancja powodzenia ka\u017cdej konferencji, idealne na spotkania wysokiej rangi. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tcpsofi_0.jpg?version=220623-06",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Oasis Atlantico Belorizonte",
+    "country": "Wyspy Zielonego Przyl\u0105dka",
+    "city": "Sal / Santa Maria (sal)",
+    "description": "Hotel znanej sieci Oasis Atlantico. Idealnie po\u0142o\u017cony w pierwszej linii brzegowej, przy idyllicznej piaszczystej pla\u017cy obmywanej turkusowymi wodami Atlantyku. Sk\u0142ada si\u0119 z budynku g\u0142\u00f3wnego i domk\u00f3w po\u0142o\u017conych w palmowym ogrodzie. Blisko st\u0105d do centrum najpopularniejszej na Sal miejscowo\u015bci turystycznej \u2013 Santa Maria. Znany z doskonale przygotowanych animacji dla ca\u0142ej rodziny i sympatycznej, zawsze u\u015bmiechni\u0119tej obs\u0142ugi.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/sidoasb_0.jpg?version=220909-08",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Lazuli",
+    "country": "Egipt",
+    "city": "Marsa Alam / Al-kusajr",
+    "description": "Po\u0142o\u017cony tu\u017c przy pla\u017cy z raf\u0105 koralow\u0105 i centrum nurkowym, jest idealnym miejscem dla mi\u0142o\u015bnik\u00f3w nurkowania i aktywnego wypoczynku. Zobacz wspania\u0142y podwodny \u015bwiat, \u0142ap s\u0142o\u0144ce na le\u017caku przy basenie, szalej w aquaparku albo skorzystaj z bogatej oferty sportowo-rekreacyjnej dost\u0119pnej na miejscu. Po aktywnym dniu zrelaksuj si\u0119 w hotelowym centrum spa i wypocznij w eleganckich, przestronnych pokojach wyposa\u017conych we wszystko, co jest potrzebne do komfortowego wypoczynku. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/rmflazu_0.jpg?version=220426-12",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Salalah Rotana Resort",
+    "country": "Oman",
+    "city": "Salalah",
+    "description": "Bajeczne miejsce o wspania\u0142ej architekturze, idealnie harmonizuj\u0105ce z pustynnym otoczeniem. Niespotykane po\u0142\u0105czenie orientalnych motyw\u00f3w i nowoczesnej aran\u017cacji. Ten luksusowy hotel ekskluzywnej sieci Rotana oferuje prawdziwie pi\u0119ciogwiazdkowy wypoczynek. Luksusowe, stylowe pokoje o pi\u0119knej kolorystyce, z orientalnymi akcentami, zapewniaj\u0105 najwy\u017cszy komfort, robi\u0105 wra\u017cenie oryginalnie zaprojektowane wn\u0119trza. Centrum hotelu stanowi fantastyczny basen, a bia\u0142a pla\u017ca z palmami wyrastaj\u0105cymi z piasku przywodzi na my\u015bl Karaiby. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/sllrota_0.jpg?version=220521-10",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Sataya Resort Marsa Alam",
+    "country": "Egipt",
+    "city": "Marsa Alam",
+    "description": "Lubisz aktywny wypoczynek, a nurkowanie to Twoja pasja? Nie wahaj si\u0119, le\u0107 do Egiptu! Na miejscu czeka pla\u017ca z raf\u0105 koralow\u0105 i centrum nurkowe, kilka basen\u00f3w, zje\u017cd\u017calnie, kort tenisowy i animacje \u2013 tu nie ma szans na nud\u0119. Hotel po\u0142o\u017cony jest na rozleg\u0142ym terenie, przestronne pokoje s\u0105 eleganckie i komfortowe, a popularna formu\u0142a all inclusive pozwoli w pe\u0142ni cieszy\u0107 si\u0119 z wakacji w Egipcie. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/rmfsata_0.jpg?version=230214-10",
+    "room": {
+      "is_standard": false,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Grand Blue Fafa",
+    "country": "Albania",
+    "city": "Durres / Golem",
+    "description": "Elegancki i nowoczesny, jest doskona\u0142\u0105 propozycj\u0105 na wakacje w gronie rodziny i przyjaci\u00f3\u0142. Po\u0142o\u017cony bezpo\u015brednio przy piaszczystej pla\u017cy z bezp\u0142atnym serwisem, oferuje przestronne i komfortowe pokoje z widokiem na morze. G\u0142\u00f3wnym punktem hotelu jest du\u017cy, fantazyjny basen z tarasem s\u0142onecznym, a na najm\u0142odszych wczasowicz\u00f3w czeka brodzik i wodny plac zabaw. W obiekcie s\u0105 3 restauracje i 2 bary, a na terenie ca\u0142ego hotelu mo\u017cna korzysta\u0107 z bezp\u0142atnego internetu bezprzewodowego. Oto idealne miejsce na pe\u0142en relaks w spokojnym, s\u0142onecznym Golem.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tiablue_0.jpg?version=210310-06",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel VidaMar Resort Madeira",
+    "country": "Madera",
+    "city": "Funchal",
+    "description": "Luksusowy i bardzo nowoczesny, idealny dla mi\u0142o\u015bnik\u00f3w pi\u0119knych widok\u00f3w i dyskretnej elegancji w modnym minimalistycznym stylu. Niemal z ka\u017cdego miejsca hotelu mo\u017cna podziwia\u0107 wspania\u0142e widoki na Atlantyk, budynki s\u0105 doskonale wkomponowane w malownicze otoczenie, zachwyca te\u017c wypiel\u0119gnowany ogr\u00f3d. Fantastyczne baseny infinity daj\u0105 z\u0142udzenie \u0142\u0105czenia si\u0119 z horyzontem, tylko par\u0119 krok\u00f3w dalej s\u0105 schodki prowadz\u0105ce bezpo\u015brednio do szmaragdowego oceanu. Wysmakowany wystr\u00f3j pomieszcze\u0144 recepcyjnych i bar\u00f3w to szczyt nowoczesnej prostoty, pi\u0119kne meble i modne aran\u017cacje \u0142\u0105cz\u0105 niebanalny styl z funkcjonalno\u015bci\u0105. Luksusowe pokoje utrzymane s\u0105 w podobnej stylistyce, nowocze\u015bnie urz\u0105dzone i nieskazitelnie czyste ciesz\u0105 oczy widokiem na morze. Rewelacyjne Sea Spa Thalasso, najwi\u0119ksze profesjonalne centrum Spa na Maderze, wyposa\u017cone w najnowsze urz\u0105dzenia do hydroterapii, oferuje bogaty zestaw zabieg\u00f3w leczniczych i upi\u0119kszaj\u0105cych. W 2021 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/fncvida_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Blue Sea Interpalace",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Teneryfa / Puerto De La Cruz",
+    "description": "Po\u0142o\u017cony w spokojnej, pi\u0119knej okolicy z tropikalnymi ogrodami p\u00f3\u0142nocnego wybrze\u017ca jest doskona\u0142ym miejscem na romantyczne wakacje we dwoje. Profesjonalnie prowadzony i zadbany, oferuje wygodne pokoje wyposa\u017cone w podstawowe udogodnienia. Na miejscu jest restauracja serwuj\u0105ca dania kuchni regionalnej i mi\u0119dzynarodowej oraz 3 bary. Do dyspozycji Go\u015bci s\u0105 2 baseny, w tym kryty, kort tenisowy i minigolf. Warto wybra\u0107 si\u0119 na zakupy do centrum z licznymi sklepami i restauracjami.",
+    "score": 3,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tfsinte_0.jpg?version=210331-04",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel R2 Pajara Beach",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Fuerteventura / Costa Calma",
+    "description": "Lubiany za wakacyjn\u0105 atmosfer\u0119, zaprojektowany z rozmachem, po\u0142o\u017cony w pi\u0119knym miejscu blisko najs\u0142ynniejszych pla\u017c Fuerteventury. Oferuje znakomite warunki na wakacje dla wszystkich kochaj\u0105cych s\u0142o\u0144ce i ocean. Ciekawa architektura hotelu, imponuj\u0105cy hol z panoramicznymi windami i wodospadem, komfortowe pokoje z marmurowymi \u0142azienkami i pod\u0142ogami to znakomite po\u0142\u0105czenie estetyki i funkcjonalno\u015bci. Firmowany przez grup\u0119 R2 gwarantuje profesjonalny serwis i unikalny program ExpeR2ience.\n\nVIVA! x ITAKA Hotels & Deals! Kochasz wakacyjne okazje? Mamy dla Ciebie mega deal w presti\u017cowych hotelach sieci R2 na Wyspach Kanaryjskich. Tylko z nami, tylko w wybranych terminach zap\u0142acisz mniej za pok\u00f3j 1-osobowy, masz gratis powitalny koktajl, wej\u015bcie do Spa, romantyczn\u0105 kolacj\u0119, a tak\u017ce 10% zni\u017cki na menu w restauracjach \u00e0 la carte.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/fuepaja_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Aequora Lanzarote Suites",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Lanzarote / Puerto Del Carmen",
+    "description": "Wakacyjny kompleks znanej sieci Sentido Hotels & Resorts. Atrakcyjnie po\u0142o\u017cony w pobli\u017cu piaszczystej, d\u0142ugiej na 7 kilometr\u00f3w pla\u017cy. Ca\u0142kowicie odnowiony, utrzymany w charakterystycznej dla wyspy, bia\u0142ej tonacji kontrastuj\u0105cej z wulkanicznym krajobrazem. Nowoczesny i stylowy, oferuje wygodne pokoje wyposa\u017cone w wiele udogodnie\u0144, r\u00f3wnie\u017c dla rodzin z dzie\u0107mi. W hotelu jest a\u017c 5 basen\u00f3w, w tym basen ze stref\u0105 chill out, dost\u0119pny tylko dla doros\u0142ych i bogata oferta animacji dla Go\u015bci w ka\u017cdym wieku. Dla dzieci przygotowano wodny plac zabaw i atrakcje w trzech miniklubach - tu nie ma czasu na nud\u0119! Warto te\u017c wybra\u0107 si\u0119 do oddalonego zaledwie o 2 km centrum Puerto del Carmen z rewelacyjnymi restauracjami, w kt\u00f3rych mo\u017cna nie tylko smacznie zje\u015b\u0107, ale r\u00f3wnie\u017c podziwia\u0107 pi\u0119kne widoki na ocean.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/acesent_0.jpg?version=210521-08",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Royal Thalassa Monastir",
+    "country": "Tunezja",
+    "city": "Monastir / Monastyr",
+    "description": "Po\u0142o\u017cony tu\u017c przy piaszczystej pla\u017cy z bezp\u0142atnym serwisem i barem all inclusive jest idealn\u0105 propozycj\u0105, dla tych kt\u00f3rzy ceni\u0105 nie tylko wygod\u0119 i komfort podczas wakacji, ale tak\u017ce \u015bwietn\u0105 zabaw\u0119! Du\u017cy basen z widokiem na morze, wiele udogodnie\u0144 sportowo-rekreacyjnych oraz urozmaicone animacje zapewni\u0105 rozrywk\u0119 i dobry humor przez ca\u0142y dzie\u0144. Chwil\u0119 oddechu mo\u017cna z\u0142apa\u0107 w przestronnych i nowocze\u015bnie urz\u0105dzonych pokojach z bezp\u0142atnym dost\u0119pem do internetu. Dla spragnionych relaksu i wyciszenia doskona\u0142ym miejscem b\u0119dzie centrum thalassoterapii z krytym basenem i szerok\u0105 ofert\u0105 zabieg\u00f3w piel\u0119gnacyjnych.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/nberoya_0.jpg?version=220915-04",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Thalassa Sousse Resort & Aquapark",
+    "country": "Tunezja",
+    "city": "Sousse",
+    "description": "Typowo wakacyjny, po\u0142o\u017cony na rozleg\u0142ym terenie, tu\u017c przy piaszczystej pla\u017cy, poleca si\u0119 na urlop z rodzin\u0105 pe\u0142en dobrej zabawy \u2013 tutaj ka\u017cdy k\u0105t t\u0119tni \u017cyciem! \u015awietna oferta rozrywkowa zadowoli Go\u015bci w ka\u017cdym wieku i nie pozwoli nawet na chwil\u0119 nudy \u2013 na miejscu czeka 5 basen\u00f3w, zabawne animacje oraz plac i pok\u00f3j zabaw dla dzieci, dla kt\u00f3rych przygotowano r\u00f3wnie\u017c ciekawe zaj\u0119cia w miniklubie. Wisienk\u0105 na torcie jest du\u017cy aquapark, w kt\u00f3rym jest a\u017c 8 basen\u00f3w i 25 zje\u017cd\u017calni dla ka\u017cdego \u2013 to \u015bwietne miejsce na sp\u0119dzenie gor\u0105cego dnia na wodnym szale\u0144stwie!",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/nbethal_0.jpg?version=220908-08",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Zita Beach Resort Zarzis",
+    "country": "Tunezja",
+    "city": "Djerba / D\u017card\u017cis",
+    "description": "Przestronny i komfortowy hotel zapewniaj\u0105cy udany wypoczynek rodzinom z dzie\u0107mi i wszystkim amatorom aktywnego wypoczynku. Po\u0142o\u017cony przy piaszczystej pla\u017cy, otoczony bujnym ogrodem gwarantuje relaks we wspania\u0142ym basenie, z usytuowan\u0105 na \u015brodku wysp\u0105, na kt\u00f3rej mo\u017cna odpocz\u0105\u0107 w cieniu palm. Chwalony za wakacyjn\u0105 atmosfer\u0119 \u2013 uwielbiana przez Go\u015bci ekipa hotelowych animator\u00f3w zaprasza do wsp\u00f3lnej zabawy w ci\u0105gu dnia i wieczorami. \u0141adne, utrzymane w jasnej kolorystyce i orientalnym stylu pokoje oraz ciekawa oferta all inclusive pozwol\u0105 prze\u017cy\u0107 tu niezapomniany urlop.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/djezita_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Ramada Resort Akbuk",
+    "country": "Turcja",
+    "city": "Didyma / Akbuk",
+    "description": "Rewelacyjnie po\u0142o\u017cony na rozleg\u0142ym terenie w malowniczym otoczeniu wzg\u00f3rz i zatoki Akbuk, jest wymarzonym miejscem na rodzinne wakacje. Nowoczesny, oferuje komfortowy pobyt i mn\u00f3stwo atrakcji dla du\u017cych i ma\u0142ych. Na miejscu s\u0105 baseny ze zje\u017cd\u017calniami, kilka restauracji i bar\u00f3w, a do piaszczystej pla\u017cy z basenami i barem obj\u0119tym all inclusive dowozi Go\u015bci hotelowy bus. Po aktywnym dniu na odpoczynek zapraszaj\u0105 eleganckie i wygodnie urz\u0105dzone pokoje.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/bjvrama_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Royal Karthago Djerba",
+    "country": "Tunezja",
+    "city": "Djerba / D\u017cerba",
+    "description": "Uroczy hotel, kt\u00f3rego wielko\u015b\u0107 widoczna jest dopiero w trakcie wieczornych pokaz\u00f3w i przedstawie\u0144. Idealny na rodzinne, aktywne wakacje! Pokoje mieszcz\u0105 si\u0119 w niewysokich bungalowach ukrytych mi\u0119dzy bujn\u0105 ro\u015blinno\u015bci\u0105, tworz\u0105c\u0105 zaciszne zak\u0105tki. Spok\u00f3j strefy mieszkalnej r\u00f3wnowa\u017cy bogaty program zaj\u0119\u0107 sportowych i animacyjnych w rejonie basenu, pla\u017cy, amfiteatru i bar\u00f3w.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/djekart_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Corallium Dunamar by Lopesan",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Gran Canaria / Playa Del Ingles",
+    "description": "Elegancki, przeznaczony tylko dla doros\u0142ych Go\u015bci, nale\u017cy do renomowanej sieci Lopesan, znanej z ekskluzywnych hoteli i doskona\u0142ego serwisu. Zaprojektowany w oryginalnym stylu, ca\u0142kowicie odnowiony, zachwyca nowoczesnymi wn\u0119trzami w jasnych barwach. Rewelacyjnie po\u0142o\u017cony w centrum rozrywkowego kurortu, oferuje niezapomniane widoki na wybrze\u017ce i nieko\u0144cz\u0105c\u0105 si\u0119 pla\u017c\u0119 Playa del Ingles oraz s\u0142ynne wydmy Maspalomas. Trzy zadbane baseny oraz bujny, tropikalny ogr\u00f3d to doskona\u0142y pomys\u0142 na relaks. Wyj\u0105tkowo\u015b\u0107 tego miejsca podkre\u015blaj\u0105 komfortowe pokoje oraz smaczna i zdrowa kuchnia. Zdecydowanie zas\u0142uguje na wi\u0119cej ni\u017c oficjalne cztery gwiazdki! W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/lpaduna_0.jpg?version=220224-12",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Fafa Premium",
+    "country": "Albania",
+    "city": "Durres / Golem",
+    "description": "Hotel w ods\u0142onie premium. Po\u0142o\u017cony w pobli\u017cu siostrzanego hotelu Meli Holiday, zaprojektowany z dba\u0142o\u015bci\u0105 o detale, bezpo\u015brednio przy piaszczystej pla\u017cy z bezp\u0142atnym serwisem. Blisko st\u0105d tak\u017ce do centrum Golem ze sklepami i restauracjami. Do dyspozycji Go\u015bci s\u0105 2 baseny, restauracja z kuchni\u0105 alba\u0144sk\u0105 i mi\u0119dzynarodow\u0105 oraz bar serwuj\u0105cy r\u00f3\u017cnorodne napoje \u2013 zar\u00f3wno one, jak i posi\u0142ki dost\u0119pne s\u0105 w wygodnej formule all inclusive. Oto \u015bwietne miejsce na przyjemne wakacje w Albanii. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tiamelp_0.jpg?version=220818-10",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel BG Tonga Design & Suites Tower",
+    "country": "Hiszpania",
+    "city": "Majorka / Can Picafort",
+    "description": "Oryginalna stylistyka wn\u0119trz, nowoczesne wyposa\u017cenie i design pokoi wprowadz\u0105 Go\u015bci w dobry nastr\u00f3j, a serwowane potrawy z trzech tematycznych restauracji usatysfakcjonuj\u0105 najbardziej wymagaj\u0105ce podniebienia. Szczeg\u00f3lnym miejscem w hotelu jest sky bar na najwy\u017cszym pi\u0119trze, gdzie popijaj\u0105c kaw\u0119 lub s\u0105cz\u0105c orze\u017awiaj\u0105cego drinka mo\u017cna do woli podziwia\u0107 naj\u0142adniejszy widok na zatok\u0119 Puerto de Alcudia z ci\u0105gn\u0105c\u0105 si\u0119 przez 12 km piaszczyst\u0105 pla\u017c\u0105. Pi\u0119kny i rozleg\u0142y hotelowy ogr\u00f3d oraz mo\u017cliwo\u015b\u0107 uprawiania sport\u00f3w gwarantuj\u0105 udany wypoczynek zar\u00f3wno doros\u0142ym, jak i dzieciom. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/pmitona_0.jpg?version=211130-10",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": true,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Club Esse Cala Gonone",
+    "country": "W\u0142ochy",
+    "city": "Sardynia / Cala Gonone",
+    "description": "Po\u0142o\u017cony w pobli\u017cu kilku pi\u0119knych pla\u017c, w tym 1 z bezp\u0142atnym serwisem, jest doskona\u0142\u0105 propozycj\u0105 dla spragnionych beztroskiego wypoczynku. Je\u015bli lubisz sp\u0119dza\u0107 czas aktywnie, mo\u017cesz pop\u0142ywa\u0107 w du\u017cym basenie (ok. 1000 m\u00b2) z wydzielon\u0105 cz\u0119\u015bci\u0105 dla dzieci lub zadba\u0107 o form\u0119 na si\u0142owni. Dla najm\u0142odszych przygotowano tak\u017ce gry i zabawy w miniklubie oraz plac zabaw i animacje. Dzi\u0119ki bliskiej odleg\u0142o\u015bci od centrum Cala Gonone mo\u017cesz wybra\u0107 si\u0119 na spacer i pozna\u0107 wszystkie uroki tego wakacyjnego miasteczka! Ca\u0142o\u015b\u0107 udanego pobytu dope\u0142ni bogata formu\u0142a all inclusive.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/olbcago_0.jpg?version=230222-10",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Kakkos Bay",
+    "country": "Grecja",
+    "city": "Kreta / Ier\u00e1petra",
+    "description": "Wspania\u0142y wyb\u00f3r dla wszystkich, kt\u00f3rzy pragn\u0105 sp\u0119dzi\u0107 prawdziwie greckie wakacje! Sympatyczna, rodzinna atmosfera, pi\u0119kne po\u0142o\u017cenie, pla\u017ca i czyste morze to fantastyczne warunki na pe\u0142en relaks w wyj\u0105tkowo urokliwym otoczeniu. Hotel le\u017cy bezpo\u015brednio przy niedu\u017cej, malowniczej pla\u017cy, na rozleg\u0142ym, doskonale utrzymanym terenie, ma nowoczesny basen infinity z widokiem na morze i zadbane, funkcjonalnie urz\u0105dzone bungalowy, otoczone du\u017cym ogrodem z oliwkami, palmami i cytrusami.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/herkakk_0.jpg?version=230128-10",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Solimar White Pearl",
+    "country": "Grecja",
+    "city": "Kreta / Kolymbari",
+    "description": "Po\u0142o\u017cony bezpo\u015brednio przy pla\u017cy z bezp\u0142atnym serwisem, oferuje spokojny wypoczynek w malowniczym miejscu. Kompleks sk\u0142ada si\u0119 z kilku budynk\u00f3w w niskiej zabudowie. Do dyspozycji Go\u015bci s\u0105 przestronne, nowocze\u015bnie urz\u0105dzone pokoje. Atutem hotelu jest basen, z kt\u00f3rego mo\u017cna podziwia\u0107 przepi\u0119kny widok na morze i g\u00f3ry. Blisko st\u0105d do centrum urokliwego, rybackiego miasteczka Kolymbari, s\u0142yn\u0105cego z doskona\u0142ych restauracji rybnych i 400-letniego klasztoru Gonias. \u015awietna baza wypadowa do najbardziej atrakcyjnych miejsc zachodniej i po\u0142udniowej Krety. W 2021 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/chqwhit_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Serenade Punta Cana Beach & Spa Resort",
+    "country": "Dominikana",
+    "city": "Punta Cana",
+    "description": "Fantastycznie po\u0142o\u017cony przy bajecznej pla\u017cy i otoczony bujn\u0105 egzotyczn\u0105 ro\u015blinno\u015bci\u0105, idealnie sprawdzi si\u0119 na rodzinne wakacje pod palmami. Hotel zach\u0119ca znakomitym standardem us\u0142ug, nowoczesnymi i eleganckimi wn\u0119trzami, komfortowymi pokojami i wy\u015bmienit\u0105 kuchni\u0105, kt\u00f3r\u0105 mo\u017cna delektowa\u0107 si\u0119 w kilku restauracjach tematycznych. Szale\u0144stwa w basenie, zabawa podczas animacji czy relaks na w spa? Wyb\u00f3r nale\u017cy do Ciebie. Jedno jest pewne \u2013 wakacje tutaj b\u0119d\u0105 niezapomniane! W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/pujsere_0.jpg?version=210708-10",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Hopps",
+    "country": "W\u0142ochy",
+    "city": "Sycylia / Mazara Del Vallo",
+    "description": "Po\u0142o\u017cony przy nadmorskiej promenadzie oraz blisko pe\u0142nego \u017cycia i lokalnych klimat\u00f3w centrum Mazara del Vallo. Miasto w przesz\u0142o\u015bci by\u0142o pod rz\u0105dami Arab\u00f3w i Norman\u00f3w, kt\u00f3rych wp\u0142ywy mo\u017cna zauwa\u017cy\u0107 w jego interesuj\u0105cej architekturze i specyficznej atmosferze. Sercem hotelu jest strefa basenowa z barem i du\u017cym tarasem s\u0142onecznym. Doskona\u0142y jako baza wypadowa do odkrywania mniej znanych turystom rejon\u00f3w po\u0142udniowo-zachodniej cz\u0119\u015bci Sycylii.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/pmohops_0.jpg?version=230208-08",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Fanar & Residences",
+    "country": "Oman",
+    "city": "Salalah",
+    "description": "Obramowana palmami pi\u0119kna pla\u017ca z delikatnym piaskiem, rewelacyjnie zaprojektowane baseny z widokiem na ocean oraz serwis na najwy\u017cszym poziomie \u2013 idealne miejsce na wakacje marze\u0144! Wyszukana architektura i eleganckie pokoje z orientalnymi elementami dekoracyjnymi przypadn\u0105 do gustu najbardziej wymagaj\u0105cym. Hotelowe restauracje serwuj\u0105 wyszukane dania kuchni mi\u0119dzynarodowej i \u015br\u00f3dziemnomorskiej, doskona\u0142ym miejscem na relaks jest bar przy pla\u017cy. Dla aktywnych przygotowano zaj\u0119cia sportowe i animacje, warto r\u00f3wnie\u017c wybra\u0107 si\u0119 do centrum Salalah ze sklepami i restauracjami. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/sllfana_0.jpg?version=220521-10",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Crown Sunshine",
+    "country": "Turcja",
+    "city": "Side",
+    "description": "Doskona\u0142e miejsce na rodzinne wakacje! Nowoczesny, oferuje wysoki poziom us\u0142ug i serwisu. Atutem hotelu s\u0105 przestronne i bardzo dobrze wyposa\u017cone pokoje oraz du\u017ce baseny ze zje\u017cd\u017calniami. Ponadto dla najm\u0142odszych przygotowano miniklub oraz ciekawe animacje. Na miejscu s\u0105 3 restauracje serwuj\u0105ce m.in. dania kuchni w\u0142oskiej i tureckiej oraz kilka bar\u00f3w, w tym na pla\u017cy. Profesjonalne centrum wellness z krytym basenem i bogat\u0105 ofert\u0105 zabieg\u00f3w piel\u0119gnacyjnych to \u015bwietne miejsce na relaks po aktywnym dniu.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/aytsuns_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Kiwengwa Beach Resort",
+    "country": "Zanzibar",
+    "city": "Kiwengwa",
+    "description": "Pi\u0119knie po\u0142o\u017cony, kilka krok\u00f3w od pla\u017cy z delikatnym, jasnym piaskiem obramowanej palmami kokosowymi jest idealnym miejscem na urlop z rodzin\u0105. Kompleks domk\u00f3w zbudowanych w afryka\u0144skim stylu, w zadbanym tropikalnym ogrodzie tworzy kameraln\u0105 atmosfer\u0119 i zapewnia prywatno\u015b\u0107. W ogr\u00f3d wkomponowano \u0142adny basen, z kt\u00f3rego mo\u017cna podziwia\u0107 widok na ocean, na miejscu organizowane s\u0105 rozrywkowe animacje. Hotel znany jest z dobrej kuchni, lokalne potrawy to raj dla mi\u0142o\u015bnik\u00f3w egzotycznej kuchni.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/znzkiwe_0.jpg?version=230311-04",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Strand Taba Heights Beach & Golf Resort (ex. InterContinental)",
+    "country": "Egipt",
+    "city": "Taba",
+    "description": "Hotel o imponuj\u0105cej orientalnej architekturze zaprasza na wygodne, rodzinne wakacje. Eleganckie wn\u0119trza, przestronne pokoje, pi\u0119knie zaprojektowane przestrzenie, egzotyczny ogr\u00f3d, sztuczne jezioro z morsk\u0105 wod\u0105, znakomite restauracje i pi\u0119kna pla\u017ca sprawiaj\u0105, \u017ce jest to wymarzone miejsce na wypoczynek \u2013 nawet dla najbardziej wymagaj\u0105cych Klient\u00f3w. Hotel polecany r\u00f3wnie\u017c organizatorom konferencji, szkole\u0144 i wyjazd\u00f3w integracyjnych. Centrum kongresowe z profesjonaln\u0105 obs\u0142ug\u0105 i pe\u0142nym wyposa\u017ceniem to gwarancja udanych spotka\u0144 biznesowych, a reszta udogodnie\u0144 to idealne wakacje z rodzin\u0105.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tcpinte_0.jpg?version=220623-06",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Gaia Royal",
+    "country": "Grecja",
+    "city": "Kos / Mastichari",
+    "description": "Idealne miejsce na rodzinny wypoczynek. Po\u0142o\u017cony w okolicy urokliwej miejscowo\u015bci Mastichari, w przepi\u0119knym zielonym ogrodzie, sk\u0142ada si\u0119 z budynku g\u0142\u00f3wnego i kilkunastu bungalow\u00f3w. W nich znajduj\u0105 si\u0119 komfortowo wyposa\u017cone pokoje standardowe i przestronne pokoje rodzinne, kt\u00f3re pomieszcz\u0105 nawet pi\u0119\u0107 os\u00f3b. Hotel proponuje szeroki wachlarz aktywno\u015bci sportowych nad basenami i na przepi\u0119knej, piaszczystej pla\u017cy. Do dyspozycji Go\u015bci 3 bary oraz restauracja oferuj\u0105ca dania kuchni greckiej i mi\u0119dzynarodowej.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/kgsgaro_0.jpg?version=220903-08",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Serra Palace (ex. LTI Serra Resort)",
+    "country": "Turcja",
+    "city": "Side / K\u0131z\u0131lot",
+    "description": "Wspania\u0142a propozycja dla rodzin i mi\u0142o\u015bnik\u00f3w wodnych szale\u0144stw! \u015awietny kompleks 6 basen\u00f3w i a\u017c 12 zje\u017cd\u017calni dla doros\u0142ych i dzieci zapewni\u0105 wiele uciechy wszystkim, kt\u00f3rzy lubi\u0105 zabaw\u0119 w wodzie. Dodatkowo rozrywk\u0119 zapewnia sympatyczny zesp\u00f3\u0142 animator\u00f3w, a przyjazna obs\u0142uga pozwoli poczu\u0107 prawdziwie wakacyjn\u0105 atmosfer\u0119. Smakowite posi\u0142ki serwowane w ramach bogatej oferty all inclusive i napoje podawane przez ca\u0142\u0105 dob\u0119 pozwol\u0105 przyjemnie uzupe\u0142ni\u0107 energi\u0119. W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/aytserr_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Royal Brayka Resort",
+    "country": "Egipt",
+    "city": "Marsa Alam",
+    "description": "Po\u0142o\u017cony w kompleksie hoteli w niezwyk\u0142ej zatoce z prywatn\u0105 pla\u017c\u0105 i pi\u0119kn\u0105 raf\u0105 koralow\u0105. Ciekawy program animacji, \u0142adne baseny oraz zaplecze sportowo-rekreacyjne to tylko niekt\u00f3re atuty hotelu. Dla dbaj\u0105cych o komfort wypoczynku s\u0105 do wyboru zadbane i przytulne pokoje standardowe lub przestronne, wygodnie urz\u0105dzone pokoje rodzinne. Zdecydowanie polecany na wakacje z rodzin\u0105 \u2013 wiele atrakcji dla doros\u0142ych i dzieci zapewni dobr\u0105 zabaw\u0119 przez ca\u0142y dzie\u0144.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/rmfroya_0.jpg?version=210811-04",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Crown Palace",
+    "country": "Turcja",
+    "city": "Side",
+    "description": "Korona nad g\u0142\u00f3wnym wej\u015bciem to najlepsza charakterystyka tego hotelu, b\u0119d\u0105cego luksusowym i eleganckim miejscem dla najbardziej wymagaj\u0105cych klient\u00f3w \u2013 tutaj ka\u017cdy mo\u017ce si\u0119 poczu\u0107 jak kr\u00f3l! Urz\u0105dzony w stylu art d\u00e9co, \u0142\u0105czy nowoczesne rozwi\u0105zania z orientalnymi detalami. Komfortowe pokoje, stylowe restauracje i centrum spa sprawiaj\u0105, \u017ce mo\u017cna tu sp\u0119dzi\u0107 wyj\u0105tkowe wakacje z klas\u0105. Blisko st\u0105d do pi\u0119knej piaszczystej pla\u017cy, gdzie mo\u017cna skorzysta\u0107 z szerokiej gamy sport\u00f3w wodnych. Hotel polecany jest tak\u017ce organizatorom konferencji wymagaj\u0105cych wyj\u0105tkowej oprawy.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/aytcrow_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Sagitta Holiday Village",
+    "country": "Chorwacja",
+    "city": "Dalmacja / Lokva Rogoznica",
+    "description": "Wakacyjna wioska tu\u017c przy pla\u017cy to doskona\u0142y pomys\u0142 na rodzinny urlop w Chorwacji! Otoczona zieleni\u0105, sk\u0142ada si\u0119 z kilku budynk\u00f3w skierowanych w stron\u0119 morza. Je\u017celi na urlopie lubisz si\u0119 porusza\u0107, to tutaj czeka na Ciebie mn\u00f3stwo mo\u017cliwo\u015bci sp\u0119dzenia czasu aktywnie: kort, tenisowy, minigolf, a mo\u017ce sporty wodne? Wyb\u00f3r nale\u017cy do Ciebie! W hotelu restauracja, bar oraz r\u00f3\u017cne typy pokoi, r\u00f3wnie\u017c dla 4-os. rodzin. Koniecznie zwied\u017a s\u0142ynny Omi\u0161 \u2013 pi\u0119kne miasto po\u0142o\u017cone w samym sercu Dalmacji.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/scrsagi_0.jpg?version=221214-08",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": true,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Pearl Beach Resort",
+    "country": "Czarnog\u00f3ra",
+    "city": "Riwiera Czarnog\u00f3rska / Canj",
+    "description": "Tutaj najwi\u0119ksza atrakcja to lokalizacja! Po\u0142o\u017cony w spokojnej okolicy, nazywanej Per\u0142owym Brzegiem, blisko pi\u0119knej pla\u017cy, w s\u0105siedztwie poro\u015bni\u0119tych lasami wzg\u00f3rz, zaprasza na urlop w wyj\u0105tkowym otoczeniu. Hotel zosta\u0142 odnowiony w 2022 r., oferuje \u015bwietny serwis i wygodne zakwaterowanie w pokojach, r\u00f3wnie\u017c dla 4-os. rodziny. Na terenie obiektu bary i restauracja serwuj\u0105ca przysmaki kuchni w\u0142oskiej i \u015br\u00f3dziemnomorskiej w lubianej przez Go\u015bci formule all inclusive. To doskona\u0142y wyb\u00f3r dla aktywnych \u2013 baseny, si\u0142ownia, sporty pla\u017cowe i wodne pozwol\u0105 zadba\u0107 o form\u0119 nawet podczas urlopu. Obowi\u0105zkowo wypo\u017cycz rower i wybierz si\u0119 na wycieczk\u0119 po urokliwej okolicy.",
+    "score": 3,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tivpebe_0.jpg?version=221209-08",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Carine Hotel Delfin",
+    "country": "Czarnog\u00f3ra",
+    "city": "Riwiera Czarnog\u00f3rska / Bijela",
+    "description": "Przepi\u0119kne widoki na Bok\u0119 Kotorsk\u0105, rewelacyjny \u015br\u00f3dziemnomorski klimat, malownicze g\u00f3ry w tle i bujna ro\u015blinno\u015b\u0107 urzekaj\u0105 ka\u017cdego turyst\u0119 i tworz\u0105 wyj\u0105tkow\u0105 atmosfer\u0119. To idealne miejsce dla aktywnych wczasowicz\u00f3w pragn\u0105cych pozna\u0107 uroki Czarnog\u00f3ry. Na miejscu jest centrum wellness z krytym basenem, restauracja i 3 bary, na Go\u015bci czekaj\u0105 te\u017c wygodne, przestronne pokoje. W okolicy mo\u017cna spr\u00f3bowa\u0107 lokalnych specja\u0142\u00f3w w kameralnych restauracjach i knajpkach, warto r\u00f3wnie\u017c wybra\u0107 si\u0119 do Herceg Novi ze s\u0142ynn\u0105 fortec\u0105 Spanjola i pi\u0119kn\u0105 promenad\u0105.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tivdelf_0.jpg?version=221206-06",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Sansi Kae Beach Resort & Spa",
+    "country": "Zanzibar",
+    "city": "Michamvi",
+    "description": "Po\u0142o\u017cony w ma\u0142o odkrytej cz\u0119\u015b\u0107 Zanzibaru, tu\u017c przy pi\u0119knej, piaszczystej pla\u017cy, to doskona\u0142a propozycja na egzotyczne wakacje z dala od zgie\u0142ku miasta. B\u0142ogi relaks w ogrodzie i na tarasie umili jeszcze bardziej widok na turkusowe wody oceanu. Hotel oferuje przestronne pokoje, idealne zar\u00f3wno dla par, jak podr\u00f3\u017cuj\u0105cych z dzie\u0107mi. Na miejscu do dyspozycji s\u0105 dwa baseny oraz centrum fitness. W hotelowych restauracjach mo\u017cna spr\u00f3bowa\u0107 specja\u0142\u00f3w lokalnej kuchni, a od s\u0142ynnego, wpisanego na List\u0119 \u015awiatowego Dziedzictwa UNESCO, Stone Town dzieli go zaledwie 1,5 godziny drogi.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/znzsans_0.jpg?version=220923-06",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Cha-Da Beach Resort",
+    "country": "Tajlandia",
+    "city": "Krabi / Koh Lanta",
+    "description": "Pi\u0119knie po\u0142o\u017cony na spokojnej, malowniczej wyspie Koh Lanta, oddalony zaledwie o kilka krok\u00f3w od urokliwej pla\u017cy. Spokojna przez niemal ca\u0142y rok woda czyni to miejsce idealnym do p\u0142ywania i pla\u017cowania. Wielbicieli wodnych k\u0105pieli ucieszy r\u00f3wnie\u017c \u0142adny i zadbany kompleks basenowy. Warto wybra\u0107 si\u0119 tak\u017ce na tutejszy niedzielny bazar, \u017ceby skosztowa\u0107 tradycyjnych, lokalnych potraw. Po aktywnie sp\u0119dzonym dniu idealnym miejscem relaksu b\u0119d\u0105 stylowe, przestronne i komfortowo urz\u0105dzone pokoje.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/kbvlata_0.jpg?version=2.6.56",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Ramada Plaza by Wyndham Thraki",
+    "country": "Grecja",
+    "city": "Kavala / Aleksandropolis",
+    "description": "Po\u0142o\u017cony nad samym morzem, kilka krok\u00f3w od prywatnej pla\u017cy z bezp\u0142atnym serwisem, jest doskona\u0142\u0105 propozycj\u0105 na beztroskie wakacje w promieniach greckiego s\u0142o\u0144ca! Na miejscu wszystko, co potrzebne do komfortowego wypoczynku: restauracja z tarasem z widokiem na wysp\u0119 Samothraki, 3 bary, w tym 1 na pla\u017cy, przestronne i eleganckie pokoje, a tak\u017ce 2 baseny z widokiem na morze, w tym 1 dla dzieci. Ca\u0142o\u015b\u0107 udanego pobytu dope\u0142ni bogata formu\u0142a all incluvie. Hotel nale\u017cy do jednej z najstarszych mi\u0119dzynarodowych sieci hotelowych Ramada.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/kvarama_0.jpg?version=230113-04",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Golden Bee Lifestyle",
+    "country": "Grecja",
+    "city": "Kreta / Stalida",
+    "description": "Idealne miejsce na chillout i dobr\u0105 zabaw\u0119! Kameralny i stylowy, tylko dla doros\u0142ych, po\u0142o\u017cony blisko piaszczystej pla\u017cy i centrum Stalidy z mn\u00f3stwem wakacyjnych atrakcji, zaprasza na wypoczynek we dwoje w wyj\u0105tkowym otoczeniu. Na miejscu jest niewielki basen z le\u017cakami i parasolami, gdzie przy muzyce mo\u017cna zrelaksowa\u0107 si\u0119 i jednocze\u015bnie podziwia\u0107 pi\u0119kny widok na morze. Do dyspozycji Go\u015bci jest tak\u017ce bar i restauracja, a do pe\u0142nego komfortu przygotowano nowoczesne i gustownie urz\u0105dzone pokoje w stylu boho, r\u00f3wnie\u017c z bezpo\u015brednim dost\u0119pem do basenu.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/hergold_0.jpg?version=220908-10",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Cape Panwa",
+    "country": "Tajlandia",
+    "city": "Phuket / Cape Panwa",
+    "description": "Po\u0142o\u017cony w pierwszej linii brzegowej, otoczony tropikalnym ogrodem, oryginalnie zaprojektowany, wymarzony nie tylko na wypoczynek z rodzin\u0105. Zjawiskowe wn\u0119trza, przestronne pokoje, wykwintne restauracje, w tym przeszklona Top of the Reef z bajecznym widokiem na morze, sprawi\u0105, \u017ce ka\u017cdy poczuje si\u0119 tutaj wyj\u0105tkowo. Tu\u017c obok hotelu pi\u0119kna pla\u017ca z molo i barem Bamboo, w kt\u00f3rym mo\u017cna sch\u0142odzi\u0107 si\u0119 zimnym drinkiem. Najm\u0142odszym spodoba si\u0119 plac i pok\u00f3j zabaw, oraz prawdziwa gratka \u2013 kolejka linowa, kt\u00f3ra kursuje na terenie resortu; mo\u017cna ni\u0105 r\u00f3wnie\u017c dojecha\u0107 do pla\u017cy.",
+    "score": 3,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/hktcadp_0.jpg?version=220506-12",
+    "room": {
+      "is_standard": false,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Amada Colossos Resort",
+    "country": "Grecja",
+    "city": "Rodos / Faliraki",
+    "description": "Nowoczesny i elegancki resort ze stylowymi wn\u0119trzami, spe\u0142ni oczekiwania nawet najbardziej wymagaj\u0105cych os\u00f3b. Po\u0142o\u017cony tu\u017c przy piaszczysto-\u017cwirowej pla\u017cy, zosta\u0142 zaprojektowany z dba\u0142o\u015bci\u0105 o ka\u017cdy szczeg\u00f3\u0142, by Go\u015bcie mogli poczu\u0107 tu jak najwi\u0119kszy komfort i wygod\u0119. Idealny dla rodzin z dzie\u0107mi, dla kt\u00f3rych przygotowano mas\u0119 atrakcji, m.in. aquapark, minikluby i urozmaicone animacje \u2013 tutaj nie ma miejsca na nud\u0119! Komfortowy wypoczynek po aktywnym dniu zapewniaj\u0105 przestronne pokoje, a o dobre samopoczucie dba zawsze u\u015bmiechni\u0119ta obs\u0142uga. Doskona\u0142e miejsce na niezapomniane, greckie wakacje! W 2022 r. hotel otrzyma\u0142 \u017bAGIEL ITAKI za najwy\u017csz\u0105 jako\u015b\u0107 \u015bwiadczonych us\u0142ug.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/rhocolo_0.jpg?version=220324-06",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Iberostar Herceg Novi",
+    "country": "Czarnog\u00f3ra",
+    "city": "Riwiera Czarnog\u00f3rska / Njivice",
+    "description": "Malownicze widoki na s\u0142ynn\u0105 Bok\u0119 Kotorsk\u0105, bezpo\u015bredni dost\u0119p do pla\u017cy i doskona\u0142y serwis to tylko cz\u0119\u015b\u0107 atut\u00f3w komfortowego hotelu, otoczonego zieleni\u0105 i g\u00f3rami. Hotelowa restauracja oferuje szeroki wyb\u00f3r lokalnych przysmak\u00f3w \u2013 mi\u0142o\u015bnicy \u015br\u00f3dziemnomorskiej kuchni b\u0119d\u0105 zachwyceni. Na najm\u0142odszych czekaj\u0105 radosne animacje w miniklubie, a na tych troch\u0119 starszych \u2013 sauna, masa\u017ce i bar na dachu, z kt\u00f3rego podziwia\u0107 mo\u017cna okolic\u0119 przy kawie lub drinku. Zwiedzaj urokliwe miasteczka lub zaszyj si\u0119 z ksi\u0105\u017ck\u0105 przy basenie i odkrywaj pi\u0119kno Czarnog\u00f3ry tak, jak lubisz najbardziej!",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tiviher_0.jpg?version=221210-04",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Abora Interclub Atlantic",
+    "country": "Wyspy Kanaryjskie",
+    "city": "Gran Canaria / San Agustin",
+    "description": "Wspania\u0142y hotel klubowy, nale\u017c\u0105cy do sieci hoteli ABORA, ca\u0142kowicie wyremontowany w 2019 r. Rewelacyjny w swojej klasie, oczaruje wspania\u0142\u0105, wakacyjn\u0105 atmosfer\u0105. Malowniczo po\u0142o\u017cony, dominuje nad okolic\u0105, jest cudown\u0105 oaz\u0105 zanurzon\u0105 w subtropikalnym ogrodzie. Tu mo\u017cna po\u0142\u0105czy\u0107 wypoczynek ze \u015bwietn\u0105 zabaw\u0105, kt\u00f3r\u0105 zapewnia profesjonalny zesp\u00f3\u0142 animator\u00f3w. Znakomicie przygotowane propozycje dla aktywnych i basen uwa\u017cany za jeden z najpi\u0119kniejszych na wyspie to kolejne argumenty, aby sp\u0119dzi\u0107 tu urlop. Go\u015bcie bardzo chwal\u0105 tak\u017ce \u015bwietn\u0105 kuchni\u0119 i s\u0105 zadowoleni z du\u017cych, zadbanych pokoi \u2013 bardzo wygodnych dla rodzin.",
+    "score": 4,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/lpainta_0.jpg?version=211029-06",
+    "room": {
+      "is_standard": true,
+      "is_family": true,
+      "is_apartment": false,
+      "is_studio": true
+    }
+  },
+  {
+    "operator": "Itaka",
+    "hotel": "Hotel Epidamn White Sensation",
+    "country": "Albania",
+    "city": "Durres",
+    "description": "Pi\u0119ciogwiazdkowa nowo\u015b\u0107 w gor\u0105cej Albanii! Otwarty w 2022 roku, po\u0142o\u017cony w dzielnicy hotelowej, tu\u017c przy prywatnej, piaszczystej pla\u017cy, jest polecany na rodzinny urlop w prawdziwie wakacyjnej atmosferze. Doceniany za go\u015bcinny personel, ciekaw\u0105 architektur\u0119 i komfortowe zakwaterowanie w przytulnych pokojach, oferuje Go\u015bciom niezb\u0119dne udogodnienia \u2013 na miejscu s\u0105 2 restauracje i bary, centrum spa oraz basen kryty i zewn\u0119trzny, sk\u0105d pi\u0119knie wida\u0107 morze \u2013 to idealne miejsce na relaks na le\u017caku. Nowoczesne wn\u0119trza s\u0105 \u0142adnie zaaran\u017cowane, a przewa\u017caj\u0105ce kolory ziemi, ciekawe tekstury, stylowe dodatki oraz nietuzinkowe detale tworz\u0105 harmonijn\u0105 ca\u0142o\u015b\u0107, nadaj\u0105c temu miejscu ciep\u0142a.",
+    "score": 5,
+    "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto/tiawhit_0.jpg?version=221209-10",
+    "room": {
+      "is_standard": true,
+      "is_family": false,
+      "is_apartment": false,
+      "is_studio": false
+    }
+  }
+]
