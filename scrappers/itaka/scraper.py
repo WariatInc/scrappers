@@ -55,7 +55,6 @@ class ItakaScraper:
         html_content = BeautifulSoup(html_page_source, 'html.parser')
         offer_titles = html_content.find_all('h3', {'class': 'header_title'})
         offer_urls = [f"https://www.itaka.pl{title.find('a')['href']}" for title in offer_titles]
-        # print(len(offer_urls))
 
         return offer_urls
 
