@@ -114,7 +114,7 @@ class ItakaScraper:
             )
             final_rating = round(rating * (rating / 6))
         except AttributeError:
-            print("Error: AttributeError - generate random rating")
+            print("AttributeError - generate random rating")
             final_rating = random.randint(3, 5)
         return final_rating
 
