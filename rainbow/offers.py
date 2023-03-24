@@ -126,7 +126,7 @@ class Offers:
         offers = [d for d in offers if 'description' in d and 'Not found' not in d['image']]
 
         for offer in offers:
-            offer['image_path'] = offer.pop('image')
+            offer['img'] = offer.pop('image')
 
             offer.update({
                 'room': {
@@ -168,14 +168,15 @@ class Offers:
             full_path = os.path.join("images", f"rainbow_scrapped_data_{name}",
                                      self.modify_img_name(offer['hotel'], str(i)))
             try:
-                image_url = "http:" + quote(offer['image_path'], safe='/:')
+                print("dfdf")
+                image_url = "http:" + quote(offer['img'], safe='/:')
                 response = urllib.request.urlopen(image_url)
                 image_data = response.read()
                 with open(full_path, 'wb') as f:
                     f.write(image_data)
             except Exception as e:
                 print("Error downloading image:", e)
-                print(offer['image_path'])
+                # print(offer['image_path'])
             # check if the download was successful
             response = urllib.request.urlopen(image_url)
 
