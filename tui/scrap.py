@@ -12,8 +12,7 @@ import tqdm.asyncio
 import offers_list as offers
 import offer
 
-TARGET_URL = "https://www.tui.pl/all-inclusive?pm_source=MENU&pm_name=All_Inclusive"
-CHROMIUM = "/usr/bin/chromium-browser"
+CHROMIUM = "/usr/bin/chromium-browser" # This is a device specific path
 
 ITERATIONS = 50
 QUERIES = [
