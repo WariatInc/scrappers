@@ -20,3 +20,7 @@ Path: images/rainbow_scrapped_data_plane/
 [self transport images](https://drive.google.com/drive/folders/1kKCYsxO-msJGCpX8x940E2VRFiZPvxIU?usp=share_link).
 
 Path: images/rainbow_scrapped_data_self/
+
+## TUI
+
+[Images](https://drive.google.com/drive/folders/1NCY3OzhiNfQitItAdQGgocPjX_atK25b?usp=sharing)
