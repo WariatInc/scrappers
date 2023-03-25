@@ -12,7 +12,7 @@ import tqdm.asyncio
 import offers_list as offers
 import offer
 
-CHROMIUM = "/usr/bin/chromium-browser" # This is a device specific path
+CHROMIUM = "/usr/bin/chromium-browser"  # This is a device specific path
 
 ITERATIONS = 50
 QUERIES = [
@@ -92,6 +92,7 @@ QUERIES = [
 
 tabs_sem = asyncio.Semaphore(15)
 
+
 async def scrape_offer(browser: Browser, data: offer.Data, url: str) -> Optional[offer.Data]:
     async with tabs_sem:
         page = await browser.newPage()
@@ -121,7 +122,7 @@ async def main():
                 for o in all_offers
                 ],
                 desc="Scraping each offer"):
-            if (scr := await res) is not None: 
+            if (scr := await res) is not None:
                 scraped_offers.append(scr)
 
     with open("tui.json", "w") as f:

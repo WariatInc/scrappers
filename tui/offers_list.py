@@ -6,10 +6,12 @@ from tqdm import tqdm
 
 from common import accept_cookies
 
+
 async def _get_all_offers_elements(page: Page):
     results = await page.querySelectorAll(".results-container")
     assert len(results) == 1
     return await results[0].querySelectorAll(".offer-tile-wrapper")
+
 
 async def _get_offer_link(offer: ElementHandle) -> str:
     offer_a = await offer.querySelector("a")
@@ -17,6 +19,7 @@ async def _get_offer_link(offer: ElementHandle) -> str:
     href = await offer_a.getProperty("href")
 
     return str(await href.jsonValue())
+
 
 async def get_all_offers(browser: Browser,
                          url: str,
@@ -37,7 +40,7 @@ async def get_all_offers(browser: Browser,
           top: document.body.clientHeight - 2500,
           left: 100,
           behavior: "smooth",
-        })""") 
+        })""")
         await asyncio.sleep(1)
         more_button = None
         for b in [b for b in await page.querySelectorAll(".button__content")

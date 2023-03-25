@@ -12,6 +12,7 @@ from common import accept_cookies, query_accordion
 from pyppeteer.page import Page
 from pyppeteer.element_handle import ElementHandle
 
+
 @dataclass
 class Data:
     @dataclass
@@ -19,7 +20,7 @@ class Data:
         is_apartament: Optional[bool] = None
         is_studio: Optional[bool] = None
         size: Optional[str] = None
-    
+
     @dataclass
     class Transport:
         organised: Optional[bool] = None
@@ -51,24 +52,26 @@ async def _get_hotel_name(page: Page) -> str:
     assert header is not None
     return await (await header.getProperty("textContent")).jsonValue()
 
+
 async def _get_location(page: Page) -> Tuple[str, str]:
     locs = await page.querySelectorAll(".top-section__subheading > nav > .breadcrumbs__list > li > a > span")
     assert locs is not None
     text_contents = await asyncio.gather(
         *(
-        prop.jsonValue()
-        for prop in await asyncio.gather(
-            *(
-            loc.getProperty("textContent")
-            for loc in locs
-            )            
-        ))
+            prop.jsonValue()
+            for prop in await asyncio.gather(
+                *(
+                    loc.getProperty("textContent")
+                    for loc in locs
+                )
+            ))
     )
-    
+
     return (
         " / ".join((str(c) for c in text_contents[1:])),
         str(text_contents[0]),
     )
+
 
 async def _get_description(page: Page) -> str:
     blocks = await page.querySelectorAll(".text-block > .text-block__content")
@@ -77,6 +80,7 @@ async def _get_description(page: Page) -> str:
         "\xa0",
         " "
     )
+
 
 async def _load_room(page: Page,
                      room: Data.Room):
@@ -93,6 +97,7 @@ async def _load_room(page: Page,
     room.is_apartament = "Apartament" in choices
     room.is_studio = "Studio" in choices
 
+
 async def _load_image(page: Page):
     image_elements = await page.querySelectorAll(".swiper-slide > div > span > img")
     assert image_elements is not None
@@ -102,7 +107,7 @@ async def _load_image(page: Page):
         if urllib.parse.urlparse(image_url):
             image_element = el
 
-    assert image_element is not None 
+    assert image_element is not None
     image_url = str(await (await image_element.getProperty("src")).jsonValue())
 
     m = hashlib.sha256()
@@ -116,16 +121,17 @@ async def _load_image(page: Page):
     )
     return image_url, image_name
 
+
 async def load_offer(page: Page,
                      data: Data,
                      url: str) -> Optional[Data]:
     try:
         await page.goto(url, timeout=3 * 60_000)
     except TimeoutError:
-        return None 
+        return None
     await accept_cookies(page)
     data.operator = "Tui"
-    data.score = await _get_rating(page) 
+    data.score = await _get_rating(page)
     data.hotel = await _get_hotel_name(page)
     data.city, data.country = await _get_location(page)
     data.url = url
