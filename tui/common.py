@@ -4,11 +4,9 @@ from pyppeteer.page import Page
 
 async def accept_cookies(page: Page):
     button_wrapper = await page.querySelector(".cookies-bar__buttons-wrapper")
-    if button_wrapper is None:
-        return
-    button = await button_wrapper.querySelector("button")
-    assert button is not None
-    await button.click()
+    if button := await button_wrapper.querySelector("button"):
+        assert button is not None
+        await button.click()
 
 
 async def query_accordion(page: Page, query: str) -> List[str]:

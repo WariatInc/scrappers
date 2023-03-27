@@ -15,15 +15,17 @@ async def _get_all_offers_elements(page: Page):
 
 async def _get_offer_link(offer: ElementHandle) -> str:
     offer_a = await offer.querySelector("a")
-    assert offer_a is not None, "Oferta nie ma linku"
+    assert offer_a
     href = await offer_a.getProperty("href")
 
     return str(await href.jsonValue())
 
 
-async def get_all_offers(browser: Browser,
-                         url: str,
-                         iterations: int = 1):
+async def get_all_offers(
+    browser: Browser,
+    url: str,
+    iterations: int = 1
+) -> set[str]:
     page = await browser.newPage()
     await page.goto(url)
     await accept_cookies(page)
@@ -46,7 +48,7 @@ async def get_all_offers(browser: Browser,
         for b in [b for b in await page.querySelectorAll(".button__content")
                   if await (await b.getProperty("textContent")).jsonValue() == "Pokaż więcej"]:
             more_button = b
-        if more_button is None:
+        if not more_button:
             break
 
         await more_button.click()

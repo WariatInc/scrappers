@@ -122,7 +122,7 @@ async def main():
                 for o in all_offers
                 ],
                 desc="Scraping each offer"):
-            if (scr := await res) is not None:
+            if scr := await res:
                 scraped_offers.append(scr)
 
     with open("tui.json", "w") as f:
