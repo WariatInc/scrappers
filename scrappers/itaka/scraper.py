@@ -22,7 +22,6 @@ class ItakaScraper:
         self.no_of_scraped_offers: int = no_of_scraped_offers
         self.offer_urls: List[str] = self.get_itaka_urls()
         self.scraped_data: List[dict] = self.generate_data()
-        self.save_json_as_file(filename="itaka_offers")
 
     def _initialize_driver(self) -> webdriver.Chrome:
         driver = webdriver.Chrome()
@@ -33,10 +32,7 @@ class ItakaScraper:
         time.sleep(5)
         accept_agreement_element = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/div[5]/div[2]/div[2]/div/div[3]/button[2]",
-                )
+                (By.XPATH, "/html/body/div[5]/div[2]/div[2]/div/div[3]/button[2]")
             )
         )
         accept_agreement_element.click()
@@ -165,12 +161,9 @@ class ItakaScraper:
             description = self._get_description(html_content)
             score = self._get_score(html_content)
             link = self._get_img(html_content)
-            (
-                is_standard,
-                is_family,
-                is_apartament,
-                is_studio,
-            ) = self._room_picker(html_content)
+            (is_standard, is_family, is_apartament, is_studio) = self._room_picker(
+                html_content
+            )
 
             json_entry = {
                 "operator": "Itaka",
@@ -199,4 +192,9 @@ class ItakaScraper:
             json.dump(self.scraped_data, outfile)
 
 
-scraper = ItakaScraper(WEBSITE_URL, NO_OF_SCRAPED_OFFERS)
+def main(*comand_line_args: str) -> None:
+    scrapper = ItakaScraper(WEBSITE_URL, NO_OF_SCRAPED_OFFERS)
+    scrapper.save_json_as_file("itaka_offers")
+       
+if __name__ == "__main__":
+    main()

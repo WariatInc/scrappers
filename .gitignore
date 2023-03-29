@@ -2,3 +2,5 @@ env/
 venv/
 .venv/
 env*
+.idea
+.itaka_offers.json.swp
