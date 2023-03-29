@@ -4,7 +4,6 @@ import json
 import random
 
 from bs4 import BeautifulSoup
-from typing import List, Tuple
 
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
@@ -20,8 +19,8 @@ class ItakaScraper:
     def __init__(self, website_url: str, no_of_scraped_offers: int) -> None:
         self.website_url: str = website_url
         self.no_of_scraped_offers: int = no_of_scraped_offers
-        self.offer_urls: List[str] = self.get_itaka_urls()
-        self.scraped_data: List[dict] = self.generate_data()
+        self.offer_urls: list[str] = self.get_itaka_urls()
+        self.scraped_data: list[dict] = self.generate_data()
 
     def _initialize_driver(self) -> webdriver.Chrome:
         driver = webdriver.Chrome()
@@ -56,21 +55,20 @@ class ItakaScraper:
             generate_more_offers_button.click()
             time.sleep(3)
 
-    def _generate_url_list(self, driver: webdriver.Chrome) -> List[str]:
+    def _generate_url_list(self, driver: webdriver.Chrome) -> list[str]:
         html_page_source = driver.page_source
         html_content = BeautifulSoup(html_page_source, "html.parser")
         offer_titles = html_content.find_all("h3", {"class": "header_title"})
-        offer_urls = [
+
+        return [
             f"https://www.itaka.pl{title.find('a')['href']}" for title in offer_titles
         ]
-
-        return offer_urls
 
     def _exit_driver(self, driver) -> None:
         time.sleep(3)
         driver.quit()
 
-    def get_itaka_urls(self) -> List[str]:
+    def get_itaka_urls(self) -> list[str]:
         selenium_driver = self._initialize_driver()
         self._accept_cookies(selenium_driver)
         self._website_scroll(selenium_driver)
@@ -129,7 +127,7 @@ class ItakaScraper:
         link_end_position = string_end_point
         return gallery_content[link_start_position:link_end_position].split('"', 1)[0]
 
-    def _room_picker(self, html_content: BeautifulSoup) -> Tuple[bool, ...]:
+    def _room_picker(self, html_content: BeautifulSoup) -> dict:
         input_string = (
             html_content.find("div", {"id": "product-tab-productdescription"})
             .text.strip()
@@ -145,10 +143,10 @@ class ItakaScraper:
             "apartament": False,
             "suite": False,
         }
-        room_options = {option: option in input_string for option in room_options}
-        return tuple(room_options.values())
 
-    def generate_data(self) -> List[dict]:
+        return {option: option in input_string for option in room_options}
+
+    def generate_data(self) -> list[dict]:
         iterations = 0
         scraped_data = []
         for offer_url in self.offer_urls:
@@ -161,9 +159,7 @@ class ItakaScraper:
             description = self._get_description(html_content)
             score = self._get_score(html_content)
             link = self._get_img(html_content)
-            (is_standard, is_family, is_apartament, is_studio) = self._room_picker(
-                html_content
-            )
+            room_dictionary = self._room_picker(html_content)
 
             json_entry = {
                 "operator": "Itaka",
@@ -174,10 +170,10 @@ class ItakaScraper:
                 "score": score,
                 "img": link,
                 "room": {
-                    "is_standard": is_standard,
-                    "is_family": is_family,
-                    "is_apartment": is_apartament,
-                    "is_studio": is_studio,
+                    "is_standard": room_dictionary["standardowy"],
+                    "is_family": room_dictionary["rodzinny"],
+                    "is_apartment": room_dictionary["apartament"],
+                    "is_studio": room_dictionary["suite"],
                 },
             }
 
@@ -195,6 +191,7 @@ class ItakaScraper:
 def main(*comand_line_args: str) -> None:
     scrapper = ItakaScraper(WEBSITE_URL, NO_OF_SCRAPED_OFFERS)
     scrapper.save_json_as_file("itaka_offers")
-       
+
+
 if __name__ == "__main__":
     main()
