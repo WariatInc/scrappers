@@ -54,45 +54,41 @@ async def _get_hotel_name(page: Page) -> str:
 
 
 async def _get_location(page: Page) -> tuple[str, str]:
-    locs = await page.querySelectorAll(".top-section__subheading > nav > .breadcrumbs__list > li > a > span")
+    locs = await page.querySelectorAll(
+        ".top-section__subheading > nav > .breadcrumbs__list > li > a > span"
+    )
     assert locs
     text_contents = await asyncio.gather(
         *(
             prop.jsonValue()
             for prop in await asyncio.gather(
-                *(
-                    loc.getProperty("textContent")
-                    for loc in locs
-                )
-            ))
+                *(loc.getProperty("textContent") for loc in locs)
+            )
+        )
     )
 
-    return (
-        " / ".join((str(c) for c in text_contents[1:])),
-        str(text_contents[0]),
-    )
+    return (" / ".join((str(c) for c in text_contents[1:])), str(text_contents[0]))
 
 
 async def _get_description(page: Page) -> str:
     blocks = await page.querySelectorAll(".text-block > .text-block__content")
     assert blocks
     return str(await (await blocks[0].getProperty("textContent")).jsonValue()).replace(
-        "\xa0",
-        " "
+        "\xa0", " "
     )
 
 
-async def _load_room(page: Page,
-                     room: Data.Room):
+async def _load_room(page: Page, room: Data.Room):
     choices_objects = await page.querySelectorAll(".room-choice__name")
     assert choices_objects
-    choices = await asyncio.gather(*(
-        prop.jsonValue()
-        for prop in await asyncio.gather(*(
-            obj.getProperty("textContent")
-            for obj in choices_objects
-        ))
-    ))
+    choices = await asyncio.gather(
+        *(
+            prop.jsonValue()
+            for prop in await asyncio.gather(
+                *(obj.getProperty("textContent") for obj in choices_objects)
+            )
+        )
+    )
 
     room.is_apartament = "Apartament" in choices
     room.is_studio = "Studio" in choices
@@ -116,18 +112,11 @@ async def _load_image(page: Page):
 
     image_name = f"{m.hexdigest()}.jpg"
     image_path = Path("images/") / Path(image_name)
-    urllib.request.urlretrieve(
-        image_url,
-        image_path.as_posix()
-    )
+    urllib.request.urlretrieve(image_url, image_path.as_posix())
     return image_url, image_name
 
 
-async def load_offer(
-    page: Page,
-    data: Data,
-    url: str
-) -> Optional[Data]:
+async def load_offer(page: Page, data: Data, url: str) -> Optional[Data]:
     try:
         await page.goto(url, timeout=3 * 60_000)
     except TimeoutError:
