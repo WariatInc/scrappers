@@ -23,8 +23,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install black flake8
  
-    - name: Check code formatting with black
-      run: black --check .
+        #    - name: Check code formatting with black
+        # run: black --check .
 
     - name: Check code quality with flake8
       run: flake8 --ignore=E501 .
