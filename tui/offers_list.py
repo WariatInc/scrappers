@@ -21,11 +21,7 @@ async def _get_offer_link(offer: ElementHandle) -> str:
     return str(await href.jsonValue())
 
 
-async def get_all_offers(
-    browser: Browser,
-    url: str,
-    iterations: int = 1
-) -> set[str]:
+async def get_all_offers(browser: Browser, url: str, iterations: int = 1) -> set[str]:
     page = await browser.newPage()
     await page.goto(url)
     await accept_cookies(page)
@@ -38,15 +34,20 @@ async def get_all_offers(
         offers = await _get_all_offers_elements(page)
         assert len(offers) > 0
         offers_links += [await _get_offer_link(offer) for offer in offers]
-        await page.evaluate("""window.scrollTo({
+        await page.evaluate(
+            """window.scrollTo({
           top: document.body.clientHeight - 2500,
           left: 100,
           behavior: "smooth",
-        })""")
+        })"""
+        )
         await asyncio.sleep(1)
         more_button = None
-        for b in [b for b in await page.querySelectorAll(".button__content")
-                  if await (await b.getProperty("textContent")).jsonValue() == "Pokaż więcej"]:
+        for b in [
+            b
+            for b in await page.querySelectorAll(".button__content")
+            if await (await b.getProperty("textContent")).jsonValue() == "Pokaż więcej"
+        ]:
             more_button = b
         if not more_button:
             break
