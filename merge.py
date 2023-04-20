@@ -3,6 +3,7 @@ from typing import Optional, Self
 import json
 import random
 from datetime import datetime
+import uuid
 
 import psycopg2 as pg
 
@@ -27,7 +28,7 @@ class Tour:
 
     def insert_into_db(self, cursor, table_name: str = "Tour"):
         # CREATE TABLE Tour (
-        #     id bigserial primary key,
+        #     id uuid primary key,
         #     operator varchar(128) not null,
         #     hotel varchar(128) not null,
         #     country varchar(128) not null,
@@ -36,8 +37,10 @@ class Tour:
         #     thumbnail_url varchar(256) not null
         #     score smallint not null,
         # );
-        cursor.execute(f"INSERT INTO {table_name} (operator, hotel, country, city, description, thumbnail_url, score) VALUES %s RETURNING id",
-                       ((self.operator,
+        cursor.execute(f"INSERT INTO {table_name} (id, operator, hotel, country, city, description, thumbnail_url, score) VALUES %s RETURNING id",
+                       ((
+                        str(uuid.uuid4()),
+                        self.operator,
                         self.hotel,
                         self.country,
                         self.city,
@@ -58,8 +61,8 @@ class Offer:
 
     def insert_into_db(self, cursor, tour_id: int, table_name: str = "Offer"):
         # CREATE TABLE Offer (
-        #     id bigserial primary key,
-        #     tour_id bigserial references Tour (id),
+        #     id uuid primary key,
+        #     tour_id uuid references Tour (id),
         #     arrival_date date not null,
         #     departure_date date not null,
         #     transport varchar(128) not null,
@@ -68,8 +71,9 @@ class Offer:
         #     room_type varchar(128) not null,
         #     available boolean not null default true,
         # );
-        cursor.execute(f"INSERT INTO {table_name} (tour_id, arrival_date, departure_date, transport, number_of_kids, number_of_adults, room_type, available) VALUES %s RETURNING id",
-                       ((tour_id,
+        cursor.execute(f"INSERT INTO {table_name} (id, tour_id, arrival_date, departure_date, transport, number_of_kids, number_of_adults, room_type, available) VALUES %s RETURNING id",
+                       ((str(uuid.uuid4()),
+                         tour_id,
                          self.arrival_date,
                          self.departure_date,
                          self.transport,
@@ -116,7 +120,7 @@ def drop_and_create_tables(cursor):
     cursor.execute(
         '''
 CREATE TABLE Tour (
-    id bigserial primary key,
+    id uuid primary key,
     operator varchar(128) not null,
     hotel varchar(128) not null,
     country varchar(128) not null,
@@ -131,8 +135,8 @@ CREATE TABLE Tour (
     cursor.execute(
         '''
 CREATE TABLE Offer (
-    id bigserial primary key,
-    tour_id bigserial references Tour (id),
+    id uuid primary key,
+    tour_id uuid references Tour (id),
     arrival_date date not null,
     departure_date date not null,
     transport varchar(128) not null,
