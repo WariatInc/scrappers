@@ -6,6 +6,17 @@ from datetime import datetime
 import uuid
 
 import psycopg2 as pg
+from pymongo import MongoClient
+
+CITIES = [
+    "Warszawa",
+    "Gdańsk",
+    "Kraków",
+    "Katowice",
+    "Poznań",
+    "Sczecin",
+    "Łódź"
+]
 
 @dataclass
 class TourMetadata:
@@ -25,8 +36,11 @@ class Tour:
     thumbnail_url: str
 
     metadata: TourMetadata
+    id: uuid.UUID = field(
+        default_factory=lambda: uuid.uuid4()
+    )
 
-    def insert_into_db(self, cursor, table_name: str = "Tour"):
+    def insert_into_postgres(self, cursor, table_name: str = "Tour"):
         # CREATE TABLE Tour (
         #     id uuid primary key,
         #     operator varchar(128) not null,
@@ -39,7 +53,7 @@ class Tour:
         # );
         cursor.execute(f"INSERT INTO {table_name} (id, operator, hotel, country, city, description, thumbnail_url, score) VALUES %s RETURNING id",
                        ((
-                        str(uuid.uuid4()),
+                        str(self.id),
                         self.operator,
                         self.hotel,
                         self.country,
@@ -54,12 +68,16 @@ class Tour:
 class Offer:
     arrival_date: datetime
     departure_date: datetime
+    departure_city: str
     transport: str
     number_of_adults: int
     number_of_kids: int
     room_type: str
+    id: uuid.UUID = field(
+        default_factory=lambda: uuid.uuid4()
+    )
 
-    def insert_into_db(self, cursor, tour_id: int, table_name: str = "Offer"):
+    def insert_into_postgres(self, cursor, tour_id: uuid.UUID, table_name: str = "Offer"):
         # CREATE TABLE Offer (
         #     id uuid primary key,
         #     tour_id uuid references Tour (id),
@@ -71,11 +89,12 @@ class Offer:
         #     room_type varchar(128) not null,
         #     available boolean not null default true,
         # );
-        cursor.execute(f"INSERT INTO {table_name} (id, tour_id, arrival_date, departure_date, transport, number_of_kids, number_of_adults, room_type, available) VALUES %s RETURNING id",
-                       ((str(uuid.uuid4()),
-                         tour_id,
+        cursor.execute(f"INSERT INTO {table_name} (id, tour_id, arrival_date, departure_date, departure_city, transport, number_of_kids, number_of_adults, room_type, available) VALUES %s RETURNING id",
+                       ((str(self.id),
+                         str(tour_id),
                          self.arrival_date,
                          self.departure_date,
+                         self.departure_city,
                          self.transport,
                          self.number_of_kids,
                          self.number_of_adults,
@@ -96,12 +115,16 @@ class Offer:
         kids = random.randint(0, adults // 2
                                  if tour.metadata.max_kids is None
                                  else tour.metadata.max_kids)
+        transport = (random.choice(tour.metadata.transport_type)
+                     if tour.metadata.transport_type is not []
+                     else "plane"
+        )
+        departure_place = None if transport == "self" else random.choice(CITIES)
         return Offer(
             arrival_date=datetime.fromtimestamp(arrival_epoch),
             departure_date=datetime.fromtimestamp(departure_epoch),
-            transport=random.choice(tour.metadata.transport_type)
-                      if tour.metadata.transport_type is not []
-                      else "plane",
+            transport=transport,
+            departure_city=departure_place,
             number_of_adults=adults,
             number_of_kids=kids,
             room_type=random.choice(tour.metadata.room_type)
@@ -110,7 +133,7 @@ class Offer:
         )
 
 
-def drop_and_create_tables(cursor):
+def postgres_drop_and_create_tables(cursor):
     cursor.execute(
         "DROP TABLE IF EXISTS Offer"
     )
@@ -139,6 +162,7 @@ CREATE TABLE Offer (
     tour_id uuid references Tour (id),
     arrival_date date not null,
     departure_date date not null,
+    departure_city varchar(128),
     transport varchar(128) not null,
     number_of_kids smallint not null,
     number_of_adults smallint not null,
@@ -279,6 +303,43 @@ def postprocess_tours(tours: list[Tour]):
     ]
 
 
+def setup_postgres(tours_and_offers: list[tuple[Tour, list[Offer]]]):
+    with pg.connect("dbname=rsww user=postgres password=postgres host=localhost port=5432") as conn:
+        with conn.cursor() as curr:
+            postgres_drop_and_create_tables(curr)
+            for tour, offers in tours_and_offers:
+                tour.insert_into_postgres(curr, "Tour")
+                for offer in offers:
+                    offer.insert_into_postgres(curr, tour.id)
+        conn.commit()
+
+
+def setup_mongodb(tours_and_offers: list[tuple[Tour, list[Offer]]]):
+    client = MongoClient("mongodb://mongodb_admin:mongodb@localhost:27017")
+
+    db = client.rsww
+    offer_view = db["offer_view"]
+
+    for tour, offers in tours_and_offers:
+        for offer in offers:
+            offer_view.insert_one({
+                "offer_id": str(offer.id),
+                "tour_id": str(tour.id),
+                "operator": tour.operator,
+                "country": tour.country,
+                "city": tour.city,
+                "description": tour.description,
+                "thumbnail_url": tour.thumbnail_url,
+                "arrival_date": offer.arrival_date,
+                "departure_date": offer.departure_date,
+                "departure_city": offer.departure_city,
+                "transport": offer.transport,
+                "number_of_adults": offer.number_of_adults,
+                "number_of_kids": offer.number_of_kids,
+                "room_type": offer.room_type,
+                "is_available": True
+            }) 
+
 def main():
     tours = (
         load_rainbow_tours() +
@@ -286,18 +347,18 @@ def main():
         load_tui_tours()
     )
     tours = postprocess_tours(tours)
+    tours_and_offers = [
+        (tour,
+        [
+            Offer.random_from_tour(tour)
+            for _ in range(1, random.randint(2, 4))
+        ])
+        for tour in tours
+    ]
+
     print(f"Inserting {len(tours)} new records ...")
-    with pg.connect("dbname=rsww user=postgres password=postgres host=localhost port=5432") as conn:
-        with conn.cursor() as curr:
-            drop_and_create_tables(curr)
-            for tour in tours:
-                tour_id = tour.insert_into_db(curr, "Tour")
-                for _ in range(0, random.randint(1, 3)):
-                    Offer.random_from_tour(tour).insert_into_db(
-                        curr,
-                        tour_id
-                    )
-        conn.commit()
+    setup_mongodb(tours_and_offers)
+    setup_postgres(tours_and_offers)
 
 if __name__ == "__main__":
     main()
