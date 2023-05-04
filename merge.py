@@ -107,8 +107,8 @@ class Offer:
         DATE_MIN = datetime(2023, 8, 1, 0, 0, 0, 0)
         DATE_MAX = datetime(2023, 11, 1, 0, 0, 0, 0)
 
-        departure_epoch = DATE_MIN.timestamp() + random.randint(0, DATE_MAX.timestamp() - DATE_MIN.timestamp())
-        arrival_epoch = departure_epoch + 60 * 60 * 24 * random.randint(4, 14)
+        arrival_epoch = DATE_MIN.timestamp() + random.randint(0, DATE_MAX.timestamp() - DATE_MIN.timestamp())
+        departure_epoch = arrival_epoch + 60 * 60 * 24 * random.randint(4, 14)
         adults = random.randint(2, 8
                                    if tour.metadata.max_adults is None
                                    else tour.metadata.max_adults)
