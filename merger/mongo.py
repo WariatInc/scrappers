@@ -22,7 +22,6 @@ def tour_to_dict(tour: Tour) -> dict:
         average_flight_cost=tour.average_flight_cost,
     )
 
-
 def offer_to_dict(offer: Offer, tour_id: int) -> dict:
     return dict(
         id=str(offer.id),
@@ -34,7 +33,6 @@ def offer_to_dict(offer: Offer, tour_id: int) -> dict:
         breakfast=offer.breakfast,
         is_available=True,
     )
-
 
 def setup(tours_and_offers: list[tuple[Tour, list[Offer]]]):
     client = MongoClient("mongodb://mongodb_admin:mongodb@localhost:27017")
