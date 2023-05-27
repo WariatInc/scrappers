@@ -1,10 +1,9 @@
 from pymongo import MongoClient
 import tqdm
 
-from merger.types import (
-    Tour,
-    Offer
-)
+from merger.types import Tour, Offer
+from merger.utils import run_cmd
+
 
 def tour_to_dict(tour: Tour) -> dict:
     return dict(
@@ -23,6 +22,7 @@ def tour_to_dict(tour: Tour) -> dict:
         average_flight_cost=tour.average_flight_cost,
     )
 
+
 def offer_to_dict(offer: Offer, tour_id: int) -> dict:
     return dict(
         id=str(offer.id),
@@ -35,16 +35,43 @@ def offer_to_dict(offer: Offer, tour_id: int) -> dict:
         is_available=True,
     )
 
+
 def setup(tours_and_offers: list[tuple[Tour, list[Offer]]]):
     client = MongoClient("mongodb://mongodb_admin:mongodb@localhost:27017")
 
     db = client.rsww
     offer_collection = db["Offer"]
     tour_collection = db["Tour"]
+    offer_collection.drop()
+    tour_collection.drop()
 
     for tour, offers in tqdm.tqdm(tours_and_offers, desc="Populating mongo ..."):
-        tour_collection.insert_one(
-            tour_to_dict(tour)
-        )
+        tour_collection.insert_one(tour_to_dict(tour))
         for offer in offers:
             offer_collection.insert_one(offer_to_dict(offer, tour.id))
+
+    db["OfferView"].drop()
+    db.command(
+        {
+            "create": "OfferView",
+            "viewOn": "Offer",
+            "pipeline": [
+                {
+                    "$lookup": {
+                        "from": "Tour",
+                        "localField": "tour_id",
+                        "foreignField": "id",
+                        "as": "tour",
+                    }
+                },
+                {"$project": {"_id": 0}},
+                {"$unwind": "$tour"},
+            ],
+        }
+    )
+
+def dump():
+    run_cmd("mongodump mongodb://mongodb_admin:mongodb@localhost:27017")
+    run_cmd("mv dump/rsww ./rsww")
+    run_cmd("zip -r dumps/mongodb_dump.zip ./rsww/*") 
+    run_cmd("rm -r ./dump ./rsww") 

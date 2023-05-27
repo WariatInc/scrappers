@@ -3,6 +3,7 @@ import random
 import tqdm
 
 from merger.const import *
+from merger.utils import run_cmd
 from merger.types import (
     load_itaka_tours,
     load_rainbow_tours,
@@ -26,9 +27,11 @@ def main():
     ]
 
     offers_amount = sum((len(offers) for (_, offers) in tours_and_offers))
+    run_cmd("mkdir dumps/")
 
     print(f"Inserting {offers_amount} new records into mongo ...")
     mongo.setup(tours_and_offers)
+    mongo.dump()
     print(f"Inserting {offers_amount} new records into postgres ...")
     postgres.setup(tours_and_offers)
     postgres.dump()
