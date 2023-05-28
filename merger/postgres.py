@@ -67,7 +67,7 @@ def insert_offer(cursor, offer: Offer, tour_id: uuid.UUID, table_name: str = "Of
                 offer.number_of_adults,
                 offer.room_type,
                 offer.all_inclusive,
-                offer.breakfast
+                offer.breakfast,
             ),
         ),
     )
@@ -102,7 +102,9 @@ def setup(tours_and_offers: list[tuple[Tour, list[Offer]]]):
     ) as conn:
         with conn.cursor() as curr:
             drop_and_create_tables(curr)
-            for tour, offers in tqdm.tqdm(tours_and_offers, desc="Populating postgres ..."):
+            for tour, offers in tqdm.tqdm(
+                tours_and_offers, desc="Populating postgres ..."
+            ):
                 insert_tour(curr, tour)
                 for offer in offers:
                     insert_offer(curr, offer, tour.id)
@@ -110,4 +112,6 @@ def setup(tours_and_offers: list[tuple[Tour, list[Offer]]]):
 
 
 def dump():
-    run_cmd("pg_dump -d rsww -h localhost -p 5432 -U postgres -Z 5 -Fc -f dumps/postgres_to.gz")
+    run_cmd(
+        "pg_dump -d rsww -h localhost -p 5432 -U postgres -Z 5 -Fc -f dumps/postgres_to.gz"
+    )

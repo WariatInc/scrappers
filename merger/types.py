@@ -6,7 +6,10 @@ import random
 import json
 
 from merger.utils import random_between
-from merger.const import *
+from merger.const import (
+    AVERAGE_FLIGHT_COST_PER_COUNTRY,
+    AVERAGE_NIGHT_COST_PER_COUNTRY
+)
 
 
 @dataclass
@@ -82,7 +85,7 @@ class Tour:
             city=self.city,
             description=self.description,
             thumbnail_url=self.thumbnail_url,
-            metadata=self.metadata
+            metadata=self.metadata,
         )
 
 

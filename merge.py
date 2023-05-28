@@ -2,7 +2,6 @@ import random
 
 import tqdm
 
-from merger.const import *
 from merger.utils import run_cmd
 from merger.types import (
     load_itaka_tours,
@@ -10,7 +9,7 @@ from merger.types import (
     load_tui_tours,
     postprocess_tours,
     fill_tours,
-    Offer
+    Offer,
 )
 from merger import postgres, mongo
 

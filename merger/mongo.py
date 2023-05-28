@@ -70,8 +70,9 @@ def setup(tours_and_offers: list[tuple[Tour, list[Offer]]]):
         }
     )
 
+
 def dump():
     run_cmd("mongodump mongodb://mongodb_admin:mongodb@localhost:27017")
     run_cmd("mv dump/rsww ./rsww")
-    run_cmd("zip -r dumps/mongodb_dump.zip ./rsww/*") 
-    run_cmd("rm -r ./dump ./rsww") 
+    run_cmd("zip -r dumps/mongodb_dump.zip ./rsww/*")
+    run_cmd("rm -r ./dump ./rsww")
