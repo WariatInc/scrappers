@@ -8,7 +8,8 @@ import json
 from merger.utils import random_between
 from merger.const import (
     AVERAGE_FLIGHT_COST_PER_COUNTRY,
-    AVERAGE_NIGHT_COST_PER_COUNTRY
+    AVERAGE_NIGHT_COST_PER_COUNTRY,
+    CITIES
 )
 
 
