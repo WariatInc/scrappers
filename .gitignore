@@ -7,3 +7,6 @@ env*
 .itaka_offers.json.swp
 **/__pycache__/
 tui/images
+.vscode
+dump/
+dumps/
