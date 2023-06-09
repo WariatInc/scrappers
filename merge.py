@@ -1,3 +1,7 @@
+"""
+This script is responsible for merging data from all scrappers and 
+populating MongoDB and PostgresDB databases.
+"""
 import random
 
 import tqdm
