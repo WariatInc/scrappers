@@ -6,6 +6,7 @@ so that is has correct `Offer` prices.
 from datetime import datetime
 from math import ceil
 from functools import lru_cache
+from typing import Generator, Iterable, Iterator, TypeVar
 
 from pymongo import MongoClient
 from pymongo.collection import Collection
@@ -31,7 +32,7 @@ class Mongo:
         self.tour: Collection = db.Tour
         self.tour.create_index("id", unique=True)
         self.offer.create_index("id", unique=True)
-    
+
     @lru_cache
     def get_tour(self, id: str):
         return self.tour.find_one({"id": id})
@@ -76,14 +77,16 @@ def calculate_price(tour: dict, offer: dict) -> float:
     return round(total_price, 2)
 
 
-def main():
+def prices_main():
     mongo = Mongo()
 
     offer_amount = mongo.offer.count_documents({})
 
     prices: dict[str, float] = {}
 
-    for offer in tqdm.tqdm(mongo.offer.find({}), desc="Calculating prices ...", total=offer_amount):
+    for offer in tqdm.tqdm(
+        mongo.offer.find({}), desc="Calculating prices ...", total=offer_amount
+    ):
         if "price" in offer:
             continue
 
@@ -95,9 +98,61 @@ def main():
         price = calculate_price(tour, offer)
 
         prices[offer_id] = price
-    
+
     for offer_id, price in tqdm.tqdm(prices.items(), desc="Updating MongoDB"):
         mongo.offer.update_one({"id": offer_id}, {"$set": {"price": price}})
 
+T = TypeVar("T")
+def batched(it: Iterable[T], N: int) -> Generator[Iterable[T], None, None]:
+    def take_n(it) -> list[T]:
+        res = [
+            next(it, None)
+            for _ in range(N)
+        ]
+
+        if res[0] is None:
+            raise StopIteration
+        
+        return [
+            r
+            for r in res
+            if r is not None
+        ]
+
+    try:
+        while True:
+            yield take_n(it)
+    except StopIteration:
+        pass
+
+def min_prices_main():
+    N = 69
+
+    mongo = Mongo()
+
+    tour_amount = mongo.tour.count_documents({})
+
+    for tours in tqdm.tqdm(
+        batched(mongo.tour.find({}), N), desc="Minimal prices ...", total=tour_amount // N
+    ):
+        tour_ids = [
+            tour["id"]
+            for tour in tours
+        ]
+
+        for res in mongo.offer.aggregate(
+            [
+                {"$match": {"tour_id": { "$in": tour_ids }}},
+                {"$group": {"_id": "$tour_id", "min_price": {"$min": "$price"}}},
+            ]
+        ):
+            tour_id = res["_id"]
+            price = res["min_price"]
+            mongo.tour.update_one(
+                { "id": tour_id },
+                { "$set": { "min_price": price } }
+            )
+
+
 if __name__ == "__main__":
-    main()
+    min_prices_main()
